@@ -101,7 +101,7 @@ main section:nth-child(2) .container .row .img_course div h5 {
 }
 
 main section:nth-child(3) {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
 }
 
 main section:nth-child(3) .container {
@@ -125,7 +125,7 @@ main section:nth-child(3) .container a {
   font-size: 26px;
   padding: 5px 34px 7px;
   text-decoration: none;
-  border: solid 2px #ffffff;
+  border: solid 2px #fff;
   border-radius: 8px;
 }
 
@@ -148,5 +148,9 @@ main section:nth-child(3) .container a:after {
   margin: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+main section:nth-child(4) {
+  background: #fff;
 }
 /*# sourceMappingURL=style.css.map */
