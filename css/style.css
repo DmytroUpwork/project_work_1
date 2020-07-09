@@ -58,7 +58,6 @@ main section:nth-child(1) div h3 {
 }
 
 main section:nth-child(1) div a {
-  display: inline-block;
   padding: 20px 35px;
   text-decoration: none;
   border-radius: 8px;
@@ -116,14 +115,15 @@ main section:nth-child(3) .container img {
 }
 
 main section:nth-child(3) .container a {
-  display: inline-block;
   position: absolute;
+  color: #fff;
   bottom: 20%;
   left: 0;
   right: 0;
   margin: auto;
-  width: 30%;
-  padding: 20px 35px;
+  width: 43%;
+  font-size: 26px;
+  padding: 5px 34px 7px;
   text-decoration: none;
   border: solid 2px #ffffff;
   border-radius: 8px;
@@ -132,5 +132,21 @@ main section:nth-child(3) .container a {
 main section:nth-child(3) .container a:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffa21b), color-stop(#e27311), to(#ffa21b));
   background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b);
+}
+
+main section:nth-child(3) .container a:after {
+  content: '';
+  background: url(../img/arrow_carousel.svg) no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 39px;
+  background-position-y: center;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 33px;
+  margin: auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

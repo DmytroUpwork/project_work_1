@@ -41,7 +41,6 @@ main
         h3
           margin-bottom: 70px
         a 
-          display: inline-block
           padding: 20px 35px
           text-decoration: none
           border-radius: 8px
@@ -81,19 +80,34 @@ main
           -moz-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
           box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
         a 
-          display: inline-block
           position: absolute
+          color: #fff
           bottom: 20%
           left: 0
           right: 0
           margin: auto
-          width: 30%
-          padding: 20px 35px
+          width: 43%;
+          font-size: 26px;
+          padding: 5px 34px 7px;
           text-decoration: none
           border: solid 2px #ffffff
           border-radius: 8px
           &:hover
             background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+          &:after 
+            content: '';
+            background: url(../img/arrow_carousel.svg) no-repeat
+            position: absolute
+            background-size: cover
+            width: 39px
+            background-position-y: center
+            height: 24px
+            top: 0
+            bottom: 0
+            right: 33px
+            margin: auto
+            transform: rotate(180deg)
+          
           
         
      
