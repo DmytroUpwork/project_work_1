@@ -14,9 +14,10 @@ header nav {
 }
 
 main section:nth-child(1) {
+  background: url("../img/img_fone_home.jpg") no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
-  background: blue;
 }
 
 main section:nth-child(1) img {
