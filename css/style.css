@@ -104,4 +104,33 @@ main section:nth-child(2) .container .row .img_course div h5 {
 main section:nth-child(3) {
   background-color: #f2f2f2;
 }
+
+main section:nth-child(3) .container {
+  padding: 3% 0 0 0;
+}
+
+main section:nth-child(3) .container img {
+  border-radius: 6px;
+  -webkit-box-shadow: -3px 26px 110px -28px rgba(0, 0, 0, 0.51);
+  box-shadow: -3px 26px 110px -28px rgba(0, 0, 0, 0.51);
+}
+
+main section:nth-child(3) .container a {
+  display: inline-block;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30%;
+  padding: 20px 35px;
+  text-decoration: none;
+  border: solid 2px #ffffff;
+  border-radius: 8px;
+}
+
+main section:nth-child(3) .container a:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffa21b), color-stop(#e27311), to(#ffa21b));
+  background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b);
+}
 /*# sourceMappingURL=style.css.map */
