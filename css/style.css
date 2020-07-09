@@ -57,7 +57,21 @@ main section:nth-child(1) div a {
 
 main section:nth-child(2) {
   background: #fff;
-  padding: 115px 0 0 0;
+  padding: 9% 0 0 0;
+}
+
+main section:nth-child(2) h2:after {
+  content: '';
+  width: 200px;
+  height: 2px;
+  border: solid 1px #ffa21b;
+  background-color: #ffa21b;
+  display: block;
+  margin: 2% auto;
+}
+
+main section:nth-child(2) .container {
+  padding: 6% 0 0 0;
 }
 
 main section:nth-child(2) .container .row .img_course {
