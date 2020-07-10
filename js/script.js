@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
   //scroll ==========================================================
+  // new fullpage("main", {});
+
+
+
   $(".course_scroll").on("click", function (e) {
     e.preventDefault();
     fullpage_api.moveTo(3);
@@ -13,6 +17,30 @@ $(document).ready(function() {
     }, 1000 + 150);
   });
 
+
+
+  // $("main").fullpage({
+  //   navigation: true,
+  //   anchors: ["firstPage", "secondPage"],
+  //   scrollOverflow: true,
+  //   normalScrollElements: ".author_popup, .overlay, .sidebar, .lg-visible",
+  // });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // document.querySelector("#form_email").onwheel = (e) => e.stopPropagation();
+
   //owl carousel ===================================================
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -21,10 +49,10 @@ $(document).ready(function() {
     nav: true,
     responsive: {
       0: {
-        items: 3,
+        items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       1000: {
         items: 3,
@@ -32,8 +60,7 @@ $(document).ready(function() {
     },
   });
 
-  //slide page ======================================================
-  new fullpage("main", {});
+
 
 });
 
