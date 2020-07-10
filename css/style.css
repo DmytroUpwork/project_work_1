@@ -42,7 +42,7 @@ main section {
   }
 }
 
-main section h2:after {
+main section h2:not(.training_title):after {
   content: '';
   width: 200px;
   height: 2px;
@@ -112,6 +112,34 @@ main section:nth-child(1) div a {
 main section:nth-child(1) div a:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e27311), color-stop(#ffa21b), to(#e27311));
   background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311);
+}
+
+main section:nth-child(1) div .directory_button {
+  border: solid 2px #fff;
+  background: transparent;
+  position: relative;
+  padding: 20px 86px 20px 34px;
+}
+
+main section:nth-child(1) div .directory_button:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffa21b), color-stop(#e27311), to(#ffa21b));
+  background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b);
+}
+
+main section:nth-child(1) div .directory_button:after {
+  content: '';
+  background: url(../img/arrow_button.svg) no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 39px;
+  background-position-y: center;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 33px;
+  margin: auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 main section:nth-child(2) {
@@ -225,6 +253,23 @@ main section:nth-child(3) .container a:after {
   main section:nth-child(3) .container h4 {
     margin-bottom: 48px;
   }
+}
+
+main section:nth-child(3) .container .price_courses {
+  border-radius: 6px;
+  padding: 18px 7px;
+  border: solid 1px #e2e2e2;
+  background-color: #fcfcfc;
+}
+
+main section:nth-child(3) .container .construction_industry:after {
+  content: '';
+  width: 200px;
+  height: 2px;
+  border: solid 1px #ffa21b;
+  background-color: #ffa21b;
+  display: block;
+  margin: 3% 0 6%;
 }
 
 main section:nth-child(4) {
@@ -461,5 +506,27 @@ footer .container form {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.prokrutka {
+  height: 100px;
+  margin: 0 15px;
+  position: relative;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.prokrutka .force-overflow {
+  min-height: 200px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #D6D6D6;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #D39C74;
 }
 /*# sourceMappingURL=style.css.map */
