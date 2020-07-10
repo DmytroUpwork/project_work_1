@@ -224,12 +224,28 @@ main section:nth-child(4) .container .owl-theme .owl-nav [class*=owl-]:hover {
 
 main section:nth-child(4) .container .item img {
   height: 450px;
+  -webkit-box-shadow: -3px 26px 110px -28px rgba(0, 0, 0, 0.51);
+  box-shadow: -3px 26px 110px -28px rgba(0, 0, 0, 0.51);
 }
 
 @media screen and (max-width: 768px) {
   main section:nth-child(4) .container .item img {
     height: 337px;
   }
+}
+
+main section:nth-child(4) .container .owl-stage-outer {
+  overflow: visible;
+}
+
+main section:nth-child(4) .container .owl-stage-outer .owl-item {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+main section:nth-child(4) .container .owl-stage-outer .owl-item.active {
+  opacity: 1;
 }
 
 main section:nth-child(4) .container .owl-nav {
