@@ -5,41 +5,17 @@ $(document).ready(function() {
 
 
 
-  $(".course_scroll").on("click", function (e) {
-    e.preventDefault();
-    fullpage_api.moveTo(3);
-    var instance = fullpage_api
-      .getActiveSection()
-      .item.querySelector(".section_course").fp_iscrollInstance;
-    instance.scrollTo(0, -950, 900);
-    setTimeout(function () {
-      instance.refresh();
-    }, 1000 + 150);
-  });
-
-
-
-  // $("main").fullpage({
-  //   navigation: true,
-  //   anchors: ["firstPage", "secondPage"],
-  //   scrollOverflow: true,
-  //   normalScrollElements: ".author_popup, .overlay, .sidebar, .lg-visible",
+  // $(".course_scroll").on("click", function (e) {
+  //   e.preventDefault();
+  //   fullpage_api.moveTo(3);
+  //   var instance = fullpage_api
+  //     .getActiveSection()
+  //     .item.querySelector(".section_course").fp_iscrollInstance;
+  //   instance.scrollTo(0, -950, 900);
+  //   setTimeout(function () {
+  //     instance.refresh();
+  //   }, 1000 + 150);
   // });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // document.querySelector("#form_email").onwheel = (e) => e.stopPropagation();
 
   //owl carousel ===================================================
   $(".owl-carousel").owlCarousel({
@@ -59,6 +35,22 @@ $(document).ready(function() {
       },
     },
   });
+
+  // временный скрипт прокрутки=======================================
+  $("a[href*=#]").on("click", function (e) {
+    var anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("href")).offset().top,
+        },
+        777
+      );
+    e.preventDefault();
+    return false;
+  });
+
 
 
 
