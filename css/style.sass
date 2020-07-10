@@ -147,6 +147,8 @@ main
         .item  
           img 
             height: 450px
+            @media screen and ( max-width: 768px )
+              height: 337px
         .owl-nav 
           position: absolute
           top: 44%
@@ -154,6 +156,15 @@ main
           justify-content: space-between
           width: 110%
           left: -5%
+          @media screen and ( max-width: 992px )
+            width: 114%
+            left: -7%
+          @media screen and ( max-width: 768px )
+            width: 120%
+            left: -10%
+          @media screen and ( max-width: 620px )
+            top: 100%
+            justify-content: center
           .owl-next, .owl-prev 
             background: url('../img/arrow_carousel.svg') no-repeat
             fill: red
