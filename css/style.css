@@ -105,6 +105,11 @@ main section:nth-child(1) div a {
   background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b);
 }
 
+main section:nth-child(1) div a:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e27311), color-stop(#ffa21b), to(#e27311));
+  background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311);
+}
+
 main section:nth-child(2) {
   background: #ffffff;
 }
@@ -138,7 +143,6 @@ main section:nth-child(2) .container .row > div .img_course:hover h5 {
   background: conic-gradient(from 0.25turn, #e28d11, #ff511b 0.5turn, #e28d11), linear-gradient(to bottom, #e79112, #e79112);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #e28d11;
 }
 
 main section:nth-child(2) .container .row > div .img_course div img {
@@ -157,6 +161,12 @@ main section:nth-child(3) {
 
 main section:nth-child(3) .container {
   padding: 3% 0 0 0;
+}
+
+@media screen and (max-width: 570px) {
+  main section:nth-child(3) .container {
+    padding: 3% 15px;
+  }
 }
 
 main section:nth-child(3) .container img {
@@ -178,6 +188,12 @@ main section:nth-child(3) .container a {
   text-decoration: none;
   border: solid 2px #fff;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 570px) {
+  main section:nth-child(3) .container a {
+    width: 70%;
+  }
 }
 
 main section:nth-child(3) .container a:hover {
@@ -374,6 +390,11 @@ main .form_wrapper form button {
   border-radius: 8px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffa21b), color-stop(#e27311), to(#ffa21b));
   background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b);
+}
+
+main .form_wrapper form button:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e27311), color-stop(#ffa21b), to(#e27311));
+  background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311);
 }
 
 @media screen and (max-width: 992px) {
