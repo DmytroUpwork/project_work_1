@@ -1,20 +1,16 @@
 $(document).ready(function() {
-  //slide page ======================================================
-  new fullpage("main", {});
 
   //scroll ==========================================================
-  $("a[href*=#]").on("click", function (e) {
-    var anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor.attr("href")).offset().top,
-        },
-        777
-      );
+  $(".course_scroll").on("click", function (e) {
     e.preventDefault();
-    return false;
+    fullpage_api.moveTo(3);
+    var instance = fullpage_api
+      .getActiveSection()
+      .item.querySelector(".section_course").fp_iscrollInstance;
+    instance.scrollTo(0, -950, 900);
+    setTimeout(function () {
+      instance.refresh();
+    }, 1000 + 150);
   });
 
   //owl carousel ===================================================
@@ -36,4 +32,8 @@ $(document).ready(function() {
     },
   });
 
+  //slide page ======================================================
+  new fullpage("main", {});
+
 });
+
