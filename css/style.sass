@@ -23,7 +23,7 @@ main
     &:not(:first-child)
       @media screen and ( max-width: 992px )
         height: 100%
-    h2:not(.training_title)
+    h2:not(.training_title),  .info_educational
       &:after 
         content: ''
         width: 200px
@@ -32,9 +32,12 @@ main
         background-color: #ffa21b
         display: block
         margin: 2% auto
-    // секция 1 ================================================
-    &:nth-child(1)
+    // секция 1 главный экран ================================================
+    &:nth-child(1).section_screen_page_course
+      background: url('../img/page_3/fone_home_page_3.jpg') no-repeat
+    &:nth-child(1).section_screen_page_home
       background: url('../img/img_fone_home.jpg') no-repeat
+    &:nth-child(1).section_screen_page_home, &:nth-child(1).section_screen_page_course
       background-size: cover
       position: relative
       overflow: hidden
@@ -87,7 +90,7 @@ main
             right: 33px
             margin: auto
             transform: rotate(180deg)
-    // секция 2 ==============================================
+    // секция 2 специализация курсов ==============================================
     &:nth-child(2)
       background: #ffffff
       .container
@@ -103,9 +106,7 @@ main
             cursor: pointer
             &:hover 
               background-color: #f2f2f2
-              -webkit-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-              -moz-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-              box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
+              box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05);
               h5 
                 background: conic-gradient(from 0.25turn, #e28d11, #ff511b 0.5turn, #e28d11), linear-gradient(to bottom, #e79112, #e79112)
                 -webkit-background-clip: text
@@ -117,7 +118,7 @@ main
               h5 
                 color: #000
                 width: 100%
-    // секция 3 section_course =========================================
+    // секция 3 section_course "курсы" =========================================
     &:nth-child(3)
       background: #f2f2f2
       .container
@@ -126,9 +127,7 @@ main
           padding: 3% 15px
         img 
           border-radius: 6px
-          -webkit-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-          -moz-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-          box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
+          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05);
         a 
           position: absolute
           color: #fff
@@ -176,7 +175,28 @@ main
             background-color: #ffa21b
             display: block
             margin: 3% 0 6%
-    // секция 4 ==============================================
+        //форма на странице "записаться на курсы" ================================
+        form
+          border-radius: 6px
+          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05)
+          border: solid 1px #d2d2d2
+          background-color: #f2f2f2
+          padding: 26px 20px 17px 20px
+          #input_upload_file
+            display: none
+          .file_upload_button label
+            cursor: pointer
+            border-radius: 5px;
+            background-color: #d8d8d8
+            padding: 12px 11px
+            font-size: 18px
+            margin: 0 auto
+            display: flex
+            justify-content: space-around
+            width: 50%
+            &:hover 
+              color: #f00
+    // секция 4 "наши учителя" карсель-слайдер ==============================================
     &:nth-child(4) 
       background: #fff
       .container 
@@ -189,9 +209,7 @@ main
         .item  
           img 
             height: 450px
-            -webkit-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-            -moz-box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
-            box-shadow: -3px 26px 110px -28px rgba(0,0,0,0.51)
+            box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05);
             @media screen and ( max-width: 768px )
               height: 337px
         .owl-stage-outer 
@@ -293,23 +311,56 @@ footer
         display: flex
         justify-content: center
 
- 
-  
+// текстовый скролл ===========================================
+.scroll_text
+  height: 100px
+  margin: 0 15px
+  position: relative
+  width: 100%
+  overflow-y: scroll
+  .force-overflow
+    min-height: auto
 
-.prokrutka 
-	height: 100px
-	margin: 0 15px
-	position: relative
-	width: 100%
-	overflow-y: scroll
-	.force-overflow
-		min-height: 200px
+// стили полосы прокрутки =====================================
 ::-webkit-scrollbar
   width: 2px
   background-color: #D6D6D6
 ::-webkit-scrollbar-thumb 
   border-radius: 2px
   background-color: #D39C74
+
+
+.select 
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
+  // position: relative
+  // background: url('../img/page_3/calendar.svg') no-repeat right center
+  outline: 0
+  
+.select_tick
+  width: 20px
+  height: 20px
+  position: absolute
+  right: 7%
+  top: 23%
+  &:after, &:before 
+    content: ''
+    display: block
+    border-bottom: 1px solid #cac1b3
+    position: absolute
+    width: 13px
+    top: 50%
+  &:after 
+    transform: rotate(45deg)
+    right: 39%
+  &:before
+    transform: rotate(-45deg)
+    left: 39%
+
+
+
 
 
             
