@@ -4,11 +4,22 @@ body
   outline: none!important 
 a:hover 
   text-decoration: none  
-.form-inline a
-  transition: 0.2s
-  color: #fff
-  &:hover
-    color: #ffa21b
+.form-inline 
+  @media screen and ( max-width: 568px )
+    width: 50%
+    justify-content: space-between
+  a
+    transition: 0.2s
+    color: #fff
+    &:hover
+      color: #ffa21b
+    img 
+      width: 20px
+      @media screen and ( max-width: 568px )
+        width: 30px
+    @media screen and ( max-width: 568px )
+      span 
+        display: none
 img 
   width: 100%
 header
