@@ -315,6 +315,9 @@ button.form_button_submit
   padding: 9% 0 18% 0
   .form_page 
     padding: 60px 55px
+    @media screen and ( max-width: 768px )
+      &:after 
+        display: none
     &:after 
       content: ''
       width: 1px
@@ -330,9 +333,13 @@ button.form_button_submit
       justify-content: space-between
       .col-sm-12 
         flex: 0 0 45%
+        @media screen and ( max-width: 768px )
+          flex: 0 0 100%
     .file_upload_button label 
       width: 33%
       margin: 40px auto 0
+      @media screen and ( max-width: 768px )
+        width: 50%
 
 // footer ===========================================================================
 footer 

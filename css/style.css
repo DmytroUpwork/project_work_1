@@ -538,6 +538,12 @@ button.form_button_submit:hover {
   padding: 60px 55px;
 }
 
+@media screen and (max-width: 768px) {
+  .section_form_page .form_page:after {
+    display: none;
+  }
+}
+
 .section_form_page .form_page:after {
   content: '';
   width: 1px;
@@ -563,9 +569,23 @@ button.form_button_submit:hover {
           flex: 0 0 45%;
 }
 
+@media screen and (max-width: 768px) {
+  .section_form_page .form_page .form-row .col-sm-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .section_form_page .form_page .file_upload_button label {
   width: 33%;
   margin: 40px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section_form_page .form_page .file_upload_button label {
+    width: 50%;
+  }
 }
 
 footer {
