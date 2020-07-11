@@ -3,25 +3,7 @@ body
 * 
   outline: none!important 
 a:hover 
-  text-decoration: none  
-.form-inline
-  a
-    transition: 0.2s
-    color: #fff
-    &:hover
-      color: #ffa21b
-    img 
-      width: 20px
-.header_form 
-  @media screen and ( max-width: 568px )
-    width: 50%
-    justify-content: space-between
-  img 
-    @media screen and ( max-width: 568px )
-      width: 30px
-  @media screen and ( max-width: 568px )
-    span 
-      display: none
+  text-decoration: none 
 img 
   width: 100%
 header
@@ -29,6 +11,28 @@ header
   width: 100% 
   z-index: 1
   background-color: rgba(31,31,36, 0.4)
+// svg иконки телефона и сообщения в футере и хедере =======================
+.form-inline
+  a
+    transition: 0.2s
+    color: #fff
+    &:hover
+      color: #ffa21b
+    svg 
+      fill: #fff
+      fill-rule: evenodd
+    &:hover svg
+      fill: #ff7c08
+.header_form 
+  a
+    svg 
+      fill: #e27311
+  @media screen and ( max-width: 568px )
+    width: 50%
+    justify-content: space-between
+  @media screen and ( max-width: 568px )
+    span 
+      display: none
 main 
   .section_course_page_course 
     @media screen and ( max-width: 992px )
@@ -132,7 +136,7 @@ main
                 background: conic-gradient(from 0.25turn, #e28d11, #ff511b 0.5turn, #e28d11), linear-gradient(to bottom, #e79112, #e79112)
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
-            div
+            a
               img 
                 width: 20%
                 height: 67px
@@ -236,7 +240,19 @@ main
           width: 39px
           height: 18px
           background-position-y: center
-        .item  
+        .item
+          div 
+            position: absolute
+            bottom: 5%
+            left: 0
+            right: 0  
+            .btn
+              color: #ffeb3b
+              transition: 0.2s
+              &:focus 
+                box-shadow: none
+              &:hover 
+                color: rgba(255, 162, 27, 1)
           img 
             height: 450px
             box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05);
@@ -412,34 +428,34 @@ footer
 
 
 
-.select 
-  -webkit-appearance: none
-  -moz-appearance: none
-  -ms-appearance: none
-  appearance: none
+// .select 
+//   -webkit-appearance: none
+//   -moz-appearance: none
+//   -ms-appearance: none
+//   appearance: none
   // position: relative
-  // background: url('../img/page_3/calendar.svg') no-repeat right center
-  outline: 0
+  // background: url('../img/form_page/svg_arrow_form.svg') no-repeat right center
+  // outline: 0
   
-.select_tick
-  width: 20px
-  height: 20px
-  position: absolute
-  right: 7%
-  top: 23%
-  &:after, &:before 
-    content: ''
-    display: block
-    border-bottom: 1px solid #cac1b3
-    position: absolute
-    width: 13px
-    top: 50%
-  &:after 
-    transform: rotate(45deg)
-    right: 39%
-  &:before
-    transform: rotate(-45deg)
-    left: 39%
+// .select_tick
+//   width: 20px
+//   height: 20px
+//   position: absolute
+//   right: 7%
+//   top: 23%
+//   &:after, &:before 
+//     content: ''
+//     display: block
+//     border-bottom: 1px solid #cac1b3
+//     position: absolute
+//     width: 13px
+//     top: 50%
+//   &:after 
+//     transform: rotate(45deg)
+//     right: 39%
+//   &:before
+//     transform: rotate(-45deg)
+//     left: 39%
 
 
 
