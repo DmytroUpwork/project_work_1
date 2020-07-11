@@ -17,9 +17,12 @@ header
   z-index: 1
   background-color: rgba(31,31,36, 0.4)
 main 
+  .section_course_page_course 
+    @media screen and ( max-width: 992px )
+      padding-bottom: 23%
   section 
-    height: 100vh
-    padding: 9% 0 0 0
+    // height: 100vh
+    padding: 9% 0 9% 0
     &:not(:first-child)
       @media screen and ( max-width: 992px )
         height: 100%
@@ -33,11 +36,16 @@ main
         display: block
         margin: 2% auto
     // секция 1 главный экран ================================================
+    &:nth-child(1).section_screen_page_form
+      background: url('../img/form_page/form_page_home.jpg') no-repeat
     &:nth-child(1).section_screen_page_course
       background: url('../img/page_3/fone_home_page_3.jpg') no-repeat
     &:nth-child(1).section_screen_page_home
       background: url('../img/img_fone_home.jpg') no-repeat
-    &:nth-child(1).section_screen_page_home, &:nth-child(1).section_screen_page_course
+    &:nth-child(1).section_screen_page_home, 
+    &:nth-child(1).section_screen_page_course, 
+    &:nth-child(1).section_screen_page_form
+      height: 100vh
       background-size: cover
       position: relative
       overflow: hidden
@@ -45,7 +53,7 @@ main
         height: 100vh    
       div 
         position: absolute
-        top: 18%
+        top: 39%
         right: 0
         left: 0
         margin: auto
@@ -119,8 +127,10 @@ main
                 color: #000
                 width: 100%
     // секция 3 section_course "курсы" =========================================
+    
     &:nth-child(3)
       background: #f2f2f2
+      padding: 9% 0 18% 0
       .container
         padding: 3% 0 0 0
         @media screen and ( max-width: 570px )
@@ -175,27 +185,32 @@ main
             background-color: #ffa21b
             display: block
             margin: 3% 0 6%
-        //форма на странице "записаться на курсы" ================================
-        form
-          border-radius: 6px
-          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05)
-          border: solid 1px #d2d2d2
-          background-color: #f2f2f2
-          padding: 26px 20px 17px 20px
-          #input_upload_file
-            display: none
-          .file_upload_button label
-            cursor: pointer
-            border-radius: 5px;
-            background-color: #d8d8d8
-            padding: 12px 11px
-            font-size: 18px
-            margin: 0 auto
-            display: flex
-            justify-content: space-around
-            width: 50%
-            &:hover 
-              color: #f00
+    //форма "записаться на курсы" ================================
+    form
+      border-radius: 6px
+      box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05)
+      border: solid 1px #d2d2d2
+      background-color: #f2f2f2
+      padding: 26px 20px 17px 20px
+      #input_upload_file
+        display: none
+      .file_upload_button label
+        cursor: pointer
+        border-radius: 5px;
+        background-color: #d8d8d8
+        padding: 12px 11px
+        font-size: 18px
+        margin: 0 auto
+        display: flex
+        justify-content: space-around
+        width: 50%
+        @media screen and ( max-width: 480px )
+          width: 100%
+        &:hover 
+          color: #f00
+      .form-row 
+        @media screen and ( max-width: 992px )
+          margin-bottom: 30px
     // секция 4 "наши учителя" карсель-слайдер ==============================================
     &:nth-child(4) 
       background: #fff
@@ -276,16 +291,48 @@ main
           font-size: 22px
           @media screen and ( max-width: 992px )
             margin: 20px 0
-      button 
-        width: 252px
-        height: 60px
-        font-size: 22px
-        border-radius: 8px
-        background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
-        &:hover 
-          background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311)
-        @media screen and ( max-width: 992px )
-          width: 100%
+button.form_button_submit
+  width: 252px
+  height: 60px
+  font-size: 22px
+  border-radius: 8px
+  color: #fff
+  background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+  &:hover 
+    background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311)
+    color: #fff
+  @media screen and ( max-width: 992px )
+    width: 100%
+.form_button_submit_page_course 
+  position: absolute
+  top: 116%
+  left: 0
+  right: 0
+  margin: auto
+  @media screen and ( max-width: 768px )
+    top: 109%
+.section_form_page
+  padding: 9% 0 18% 0
+  .form_page 
+    padding: 60px 55px
+    &:after 
+      content: ''
+      width: 1px
+      height: 49%
+      background-color: #ddd6d6
+      position: absolute
+      top: 8%
+      left: 0
+      right: 0
+      margin: auto
+    .form-row 
+      margin-bottom: 11px
+      justify-content: space-between
+      .col-sm-12 
+        flex: 0 0 45%
+    .file_upload_button label 
+      width: 33%
+      margin: 40px auto 0
 
 // footer ===========================================================================
 footer 
@@ -318,6 +365,8 @@ footer
   position: relative
   width: 100%
   overflow-y: scroll
+  @media screen and ( max-width: 992px )
+    margin: 60px 15px
   .force-overflow
     min-height: auto
 
@@ -328,6 +377,17 @@ footer
 ::-webkit-scrollbar-thumb 
   border-radius: 2px
   background-color: #D39C74
+
+
+
+
+
+
+
+
+
+
+
 
 
 .select 
