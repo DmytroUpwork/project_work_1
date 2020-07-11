@@ -4,10 +4,7 @@ body
   outline: none!important 
 a:hover 
   text-decoration: none  
-.form-inline 
-  @media screen and ( max-width: 568px )
-    width: 50%
-    justify-content: space-between
+.form-inline
   a
     transition: 0.2s
     color: #fff
@@ -15,11 +12,16 @@ a:hover
       color: #ffa21b
     img 
       width: 20px
-      @media screen and ( max-width: 568px )
-        width: 30px
+.header_form 
+  @media screen and ( max-width: 568px )
+    width: 50%
+    justify-content: space-between
+  img 
     @media screen and ( max-width: 568px )
-      span 
-        display: none
+      width: 30px
+  @media screen and ( max-width: 568px )
+    span 
+      display: none
 img 
   width: 100%
 header
@@ -164,6 +166,8 @@ main
           border-radius: 8px
           @media screen and ( max-width: 570px )
             width: 70%
+          @media screen and ( max-width: 434px )
+            bottom: 35%
           &:hover
             background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
           &:after 
