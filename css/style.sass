@@ -33,12 +33,17 @@ header
   @media screen and ( max-width: 568px )
     span 
       display: none
+
+.section_course_page_course 
+  display: none
+  background: #f2f2f2!important
+  @media screen and ( max-width: 992px )
+    padding-bottom: 23%
+.active_visible
+  display: block
+
 main 
-  .section_course_page_course 
-    @media screen and ( max-width: 992px )
-      padding-bottom: 23%
   section 
-    // height: 100vh
     padding: 9% 0 9% 0
     &:not(:first-child)
       @media screen and ( max-width: 992px )
@@ -57,8 +62,7 @@ main
       background: url('../img/form_page/form_page_home.jpg') no-repeat
       height: 53vh
       @media screen and ( max-width: 968px )
-        height: 100vh
-        
+        height: 100vh        
     &:nth-child(1).section_screen_page_course
       background: url('../img/page_3/fone_home_page_3.jpg') no-repeat
       height: 57vh
@@ -69,8 +73,7 @@ main
       height: 100vh
     &:nth-child(1).section_screen_page_home, 
     &:nth-child(1).section_screen_page_course, 
-    &:nth-child(1).section_screen_page_form
-      
+    &:nth-child(1).section_screen_page_form     
       background-size: cover
       position: relative
       overflow: hidden
@@ -259,11 +262,23 @@ main
           height: 18px
           background-position-y: center
         .item
+          &:hover
+            &::after 
+              content: ''
+              width: 100%
+              height: 100%
+              display: block
+              background: rgba(10, 10, 12, 0.18)
+              position: absolute
+              top: 0
           div 
             position: absolute
             bottom: 5%
             left: 0
-            right: 0  
+            right: 0 
+            transsition: 0.2s
+            opacity: 0 
+            z-index: 99999
             .btn
               color: #ffeb3b
               transition: 0.2s
@@ -271,9 +286,11 @@ main
                 box-shadow: none
               &:hover 
                 color: rgba(255, 162, 27, 1)
+          &:hover div
+            opacity: 1
           img 
             height: 450px
-            box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05);
+            box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05)
             @media screen and ( max-width: 768px )
               height: 337px
         .owl-stage-outer 
@@ -288,17 +305,18 @@ main
           top: 44%
           display: flex
           justify-content: space-between
-          width: 110%
           left: -5%
           @media screen and ( max-width: 992px )
-            width: 114%
+            // width: 114%
             left: -7%
           @media screen and ( max-width: 768px )
-            width: 120%
+            // width: 120%
             left: -10%
           @media screen and ( max-width: 620px )
             top: 100%
             justify-content: center
+            width: 100%
+            left: 0
           .owl-next, .owl-prev 
             background: url('../img/arrow_carousel.svg') no-repeat
             fill: red
@@ -309,6 +327,17 @@ main
               display: none
           .owl-next
             transform: rotate(180deg)
+            position: absolute
+            left: 1145px
+            @media screen and ( max-width: 1200px )
+              left: 951px
+            @media screen and ( max-width: 992px )
+              left: 712px
+            @media screen and ( max-width: 768px )
+              left: 534px
+            @media screen and ( max-width: 620px )
+              position: relative
+              left: 0
   //form email =================================================
   .form_wrapper
     background-color: #f2f2f2
@@ -340,6 +369,7 @@ main
           font-size: 22px
           @media screen and ( max-width: 992px )
             margin: 20px 0
+
 button.form_button_submit
   width: 252px
   height: 60px

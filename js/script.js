@@ -1,6 +1,9 @@
-$(document).ready(function() {
+// document.addEventListener("DOMContentLoaded", function () {
 
-  //owl carousel ===================================================
+// });
+
+$(document).ready(function () {
+      //owl carousel ===================================================
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 25,
@@ -29,7 +32,32 @@ $(document).ready(function() {
   });
 
   // временный скрипт прокрутки=======================================
-  $("a[href*=#]").on("click", function (e) {
+  // $("a[href*=#]").on("click", function (e) {
+  //   var anchor = $(this);
+  //   $("html, body")
+  //     .stop()
+  //     .animate(
+  //       {
+  //         scrollTop: $(anchor.attr("href")).offset().top,
+  //       },
+  //       777
+  //     );
+  //   e.preventDefault();
+  //   return false;
+  // });
+
+
+
+
+});
+
+
+const $sections_info = document.querySelector(".section_course_page_course");
+const $sections = document.querySelectorAll(".img_course");
+for (const $section of $sections) {
+  $section.onclick = () => {
+    document.querySelector('.section_course_page_course').classList.add('active_visible');
+    
     var anchor = $(this);
     $("html, body")
       .stop()
@@ -41,14 +69,7 @@ $(document).ready(function() {
       );
     e.preventDefault();
     return false;
-  });
-
-});
-
-
-
-
-
-
-
-
+    
+  
+  };
+};

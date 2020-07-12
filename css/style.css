@@ -55,10 +55,19 @@ header {
   }
 }
 
+.section_course_page_course {
+  display: none;
+  background: #f2f2f2 !important;
+}
+
 @media screen and (max-width: 992px) {
-  main .section_course_page_course {
+  .section_course_page_course {
     padding-bottom: 23%;
   }
+}
+
+.active_visible {
+  display: block;
 }
 
 main section {
@@ -419,11 +428,24 @@ main section:nth-child(4) .container .owl-theme .owl-nav [class*=owl-]:hover {
   background-position-y: center;
 }
 
+main section:nth-child(4) .container .item:hover::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(10, 10, 12, 0.18);
+  position: absolute;
+  top: 0;
+}
+
 main section:nth-child(4) .container .item div {
   position: absolute;
   bottom: 5%;
   left: 0;
   right: 0;
+  transsition: 0.2s;
+  opacity: 0;
+  z-index: 99999;
 }
 
 main section:nth-child(4) .container .item div .btn {
@@ -439,6 +461,10 @@ main section:nth-child(4) .container .item div .btn:focus {
 
 main section:nth-child(4) .container .item div .btn:hover {
   color: #ffa21b;
+}
+
+main section:nth-child(4) .container .item:hover div {
+  opacity: 1;
 }
 
 main section:nth-child(4) .container .item img {
@@ -476,20 +502,17 @@ main section:nth-child(4) .container .owl-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 110%;
   left: -5%;
 }
 
 @media screen and (max-width: 992px) {
   main section:nth-child(4) .container .owl-nav {
-    width: 114%;
     left: -7%;
   }
 }
 
 @media screen and (max-width: 768px) {
   main section:nth-child(4) .container .owl-nav {
-    width: 120%;
     left: -10%;
   }
 }
@@ -500,6 +523,8 @@ main section:nth-child(4) .container .owl-nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -518,6 +543,33 @@ main section:nth-child(4) .container .owl-nav .owl-next span, main section:nth-c
 main section:nth-child(4) .container .owl-nav .owl-next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  left: 1145px;
+}
+
+@media screen and (max-width: 1200px) {
+  main section:nth-child(4) .container .owl-nav .owl-next {
+    left: 951px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main section:nth-child(4) .container .owl-nav .owl-next {
+    left: 712px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section:nth-child(4) .container .owl-nav .owl-next {
+    left: 534px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main section:nth-child(4) .container .owl-nav .owl-next {
+    position: relative;
+    left: 0;
+  }
 }
 
 main .form_wrapper {
