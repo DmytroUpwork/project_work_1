@@ -32,19 +32,19 @@ $(document).ready(function () {
   });
 
   // временный скрипт прокрутки=======================================
-  // $("a[href*=#]").on("click", function (e) {
-  //   var anchor = $(this);
-  //   $("html, body")
-  //     .stop()
-  //     .animate(
-  //       {
-  //         scrollTop: $(anchor.attr("href")).offset().top,
-  //       },
-  //       777
-  //     );
-  //   e.preventDefault();
-  //   return false;
-  // });
+  $("a[href*=#]").on("click", function (e) {
+    var anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("href")).offset().top,
+        },
+        777
+      );
+    e.preventDefault();
+    return false;
+  });
 
 
 
@@ -58,17 +58,17 @@ for (const $section of $sections) {
   $section.onclick = () => {
     document.querySelector('.section_course_page_course').classList.add('active_visible');
     
-    var anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor.attr("href")).offset().top,
-        },
-        777
-      );
-    e.preventDefault();
-    return false;
+    // var anchor = $(this);
+    // $("html, body")
+    //   .stop()
+    //   .animate(
+    //     {
+    //       scrollTop: $(anchor.attr("href")).offset().top,
+    //     },
+    //     777
+    //   );
+    // e.preventDefault();
+    // return false;
     
   
   };
