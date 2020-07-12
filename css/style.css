@@ -158,6 +158,12 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
   }
 }
 
+@media screen and (max-width: 470px) {
+  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-height: 414px) {
   main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
     font-size: 2.5rem;
