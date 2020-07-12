@@ -327,6 +327,16 @@
         </form>
       </div>
     </footer>
+
+    <script> 
+      const $sections_info = document.querySelector(".section_course_page_course");
+      const $sections = document.querySelectorAll(".building");
+      for (const $section of $sections) {
+        $section.onclick = () => {
+          document.querySelector('.section_course_page_course').classList.add('active_visible');
+        };
+      };
+    </script>
     
     <script src="./libs/ajax_jquery.min.js"></script>
     <script src="./libs/bootstrap.min.js"></script>

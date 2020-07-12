@@ -52,24 +52,3 @@ $(document).ready(function () {
 });
 
 
-const $sections_info = document.querySelector(".section_course_page_course");
-const $sections = document.querySelectorAll(".img_course");
-for (const $section of $sections) {
-  $section.onclick = () => {
-    document.querySelector('.section_course_page_course').classList.add('active_visible');
-    
-    // var anchor = $(this);
-    // $("html, body")
-    //   .stop()
-    //   .animate(
-    //     {
-    //       scrollTop: $(anchor.attr("href")).offset().top,
-    //     },
-    //     777
-    //   );
-    // e.preventDefault();
-    // return false;
-    
-  
-  };
-};
