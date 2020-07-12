@@ -1,22 +1,5 @@
 $(document).ready(function() {
 
-  //scroll ==========================================================
-  // new fullpage("main", {});
-
-
-
-  // $(".course_scroll").on("click", function (e) {
-  //   e.preventDefault();
-  //   fullpage_api.moveTo(3);
-  //   var instance = fullpage_api
-  //     .getActiveSection()
-  //     .item.querySelector(".section_course").fp_iscrollInstance;
-  //   instance.scrollTo(0, -950, 900);
-  //   setTimeout(function () {
-  //     instance.refresh();
-  //   }, 1000 + 150);
-  // });
-
   //owl carousel ===================================================
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -61,6 +44,9 @@ $(document).ready(function() {
   });
 
 });
+
+
+
 
 
 

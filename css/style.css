@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden;
-}
-
 * {
   outline: none !important;
 }
@@ -90,9 +86,21 @@ main section:nth-child(1).section_screen_page_form {
   height: 53vh;
 }
 
+@media screen and (max-width: 968px) {
+  main section:nth-child(1).section_screen_page_form {
+    height: 100vh;
+  }
+}
+
 main section:nth-child(1).section_screen_page_course {
   background: url("../img/page_3/fone_home_page_3.jpg") no-repeat;
   height: 57vh;
+}
+
+@media screen and (max-width: 968px) {
+  main section:nth-child(1).section_screen_page_course {
+    height: 100vh;
+  }
 }
 
 main section:nth-child(1).section_screen_page_home {
@@ -121,6 +129,12 @@ main section:nth-child(1).section_screen_page_home div, main section:nth-child(1
   height: 0;
 }
 
+@media screen and (max-height: 414px) {
+  main section:nth-child(1).section_screen_page_home div, main section:nth-child(1).section_screen_page_course div, main section:nth-child(1).section_screen_page_form div {
+    top: 24%;
+  }
+}
+
 main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
   font-size: 4.5rem;
   padding: 0 20px;
@@ -144,9 +158,21 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
   }
 }
 
+@media screen and (max-height: 414px) {
+  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+    font-size: 2.5rem;
+  }
+}
+
 main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
   margin-bottom: 8%;
   padding: 0 20px;
+}
+
+@media screen and (max-height: 320px) {
+  main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
+    font-size: 1rem;
+  }
 }
 
 main section:nth-child(1).section_screen_page_home div a, main section:nth-child(1).section_screen_page_course div a, main section:nth-child(1).section_screen_page_form div a {
@@ -259,7 +285,7 @@ main section:nth-child(3) .container img {
 main section:nth-child(3) .container a {
   position: absolute;
   color: #fff;
-  bottom: 28%;
+  top: 62%;
   left: 0;
   right: 0;
   margin: auto;
@@ -279,7 +305,7 @@ main section:nth-child(3) .container a {
 
 @media screen and (max-width: 434px) {
   main section:nth-child(3) .container a {
-    bottom: 35%;
+    top: 42%;
   }
 }
 
@@ -373,6 +399,7 @@ main section form .file_upload_button label:hover {
 
 main section:nth-child(4) {
   background: #fff;
+  overflow-x: hidden;
 }
 
 main section:nth-child(4) .container {
