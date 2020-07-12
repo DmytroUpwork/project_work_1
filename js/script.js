@@ -36,6 +36,15 @@ $(document).ready(function() {
     },
   });
 
+
+  // изменение значения селект =====================================
+  $(".building").on("click", function () {
+    var id = $(this).attr("data-n");
+    $(".select")
+      .find("[value=" + id + "]")
+      .prop("selected", true);
+  });
+
   // временный скрипт прокрутки=======================================
   $("a[href*=#]").on("click", function (e) {
     var anchor = $(this);
@@ -51,8 +60,9 @@ $(document).ready(function() {
     return false;
   });
 
-
-
-
 });
+
+
+
+
 
