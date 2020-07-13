@@ -106,7 +106,7 @@ main section:nth-child(1).section_screen_page_form {
 }
 
 main section:nth-child(1).section_screen_page_form .container {
-  padding-top: 9%;
+  padding-top: 7%;
 }
 
 main section:nth-child(1).section_screen_page_form .container h1 {
@@ -128,6 +128,18 @@ main section:nth-child(1).section_screen_page_course .container {
   padding-top: 9%;
 }
 
+@media screen and (max-width: 992px) {
+  main section:nth-child(1).section_screen_page_course .container {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main section:nth-child(1).section_screen_page_course .container {
+    padding-top: 31%;
+  }
+}
+
 main section:nth-child(1).section_screen_page_course .container h1 {
   margin-bottom: 6%;
 }
@@ -144,6 +156,12 @@ main section:nth-child(1).section_screen_page_home {
 
 main section:nth-child(1).section_screen_page_home .container {
   padding-top: 20%;
+}
+
+main section:nth-child(1).section_screen_page_home .container a {
+  padding: 14px 35px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#de9224), color-stop(#e27311), color-stop(#e27311), to(#de9224));
+  background-image: linear-gradient(to top, #de9224, #e27311, #e27311, #de9224);
 }
 
 main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
@@ -222,10 +240,10 @@ main section:nth-child(1).section_screen_page_home div h3, main section:nth-chil
 }
 
 main section:nth-child(1).section_screen_page_home div a, main section:nth-child(1).section_screen_page_course div a, main section:nth-child(1).section_screen_page_form div a {
-  padding: 14px 35px;
   border-radius: 8px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#de9224), color-stop(#e27311), color-stop(#e27311), to(#de9224));
-  background-image: linear-gradient(to top, #de9224, #e27311, #e27311, #de9224);
+  background: transparent;
+  position: relative;
+  padding: 14px 86px 14px 34px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -244,9 +262,6 @@ main section:nth-child(1).section_screen_page_home div a:hover, main section:nth
 
 main section:nth-child(1).section_screen_page_home div .directory_button, main section:nth-child(1).section_screen_page_course div .directory_button, main section:nth-child(1).section_screen_page_form div .directory_button {
   border: solid 2px #fff;
-  background: transparent;
-  position: relative;
-  padding: 14px 86px 14px 34px;
 }
 
 main section:nth-child(1).section_screen_page_home div .directory_button:hover, main section:nth-child(1).section_screen_page_course div .directory_button:hover, main section:nth-child(1).section_screen_page_form div .directory_button:hover {
@@ -276,7 +291,7 @@ main section:nth-child(2) {
 }
 
 main section:nth-child(2) .container {
-  padding: 42px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 main section:nth-child(2) .container .row > div {
@@ -754,6 +769,9 @@ button.form_button_submit:hover {
 
 .form-control {
   color: rgba(31, 31, 36, 0.4);
+  border: none;
+  padding: 10px 17px;
+  height: auto;
 }
 
 .form-control:hover {
@@ -770,7 +788,6 @@ button.form_button_submit:hover {
 
 .section_form_page .container {
   width: 65%;
-  padding: 15px 0 0 0 !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -794,12 +811,6 @@ button.form_button_submit:hover {
 .section_form_page .form_page {
   padding: 60px 46px;
   border: none;
-}
-
-.section_form_page .form_page .form-control {
-  border: none;
-  padding: 10px 17px;
-  height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -957,8 +968,6 @@ footer .container form div:first-child {
 .scroll_text {
   height: 100px;
   margin: 0 15px;
-  position: relative;
-  width: 100%;
   overflow-y: scroll;
 }
 
