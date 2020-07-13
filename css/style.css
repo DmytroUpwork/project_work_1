@@ -125,7 +125,7 @@ main section:nth-child(1).section_screen_page_course {
 }
 
 main section:nth-child(1).section_screen_page_course .container {
-  padding-top: 9%;
+  padding-top: 8%;
 }
 
 @media screen and (max-width: 992px) {
