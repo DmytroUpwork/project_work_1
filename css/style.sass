@@ -18,6 +18,8 @@ header
   a
     transition: 0.2s
     color: #fff
+    span 
+      opacity: 0.7
     &:hover
       color: #ffa21b
     svg 
@@ -51,7 +53,6 @@ main
         height: 100%
     h2:not(.training_title),  .info_educational
       letter-spacing: 1.5px
-      font-weight: 600
       color: rgba(31, 31, 36, 0.9)
       &:after 
         content: ''
@@ -60,23 +61,31 @@ main
         border: solid 1px #ffa21b
         background-color: #ffa21b
         display: block
-        margin: 35px auto 0
+        margin: 22px auto 0
     // секция 1 главный экран ================================================
     &:nth-child(1).section_screen_page_form
       background: url('../img/form_page/form_page_home.jpg') no-repeat
       height: 53vh
+      .container
+        padding-top: 9%
+        h1 
+          margin-bottom: 5%
       @media screen and ( max-width: 968px )
         height: 100vh        
     &:nth-child(1).section_screen_page_course
       background: url('../img/page_3/fone_home_page_3.jpg') no-repeat
       height: 57vh
+      .container
+        padding-top: 9%
+        h1 
+          margin-bottom: 6%
       @media screen and ( max-width: 968px )
         height: 100vh
     &:nth-child(1).section_screen_page_home
       background: url('../img/img_fone_home.jpg') no-repeat
       height: 100vh
       .container
-        padding-top: 11%
+        padding-top: 20%
     &:nth-child(1).section_screen_page_home, 
     &:nth-child(1).section_screen_page_course, 
     &:nth-child(1).section_screen_page_form     
@@ -91,11 +100,11 @@ main
         h1, h3 
           text-shadow: 0px 7px 21.6px rgba(31, 31, 36, 0.3)
         h1
-          margin-bottom: 20px 
+          margin-bottom: 25px 
           font-size: 50px
           font-weight: bold
           letter-spacing: 6.2px
-          // font-family: 'Open Sans', sans-serif
+          opacity: 0.9
           @media screen and ( max-width: 774px )
             font-size: 3.5rem
           @media screen and ( max-width: 620px )
@@ -110,10 +119,10 @@ main
             font-size: 2.5rem
             letter-spacing: 0
         h3
-          margin-bottom: 8%
-          // font-family: 'Open Sans', sans-serif
+          margin-bottom: 10%
           letter-spacing: 2.25px
           font-size: 30px
+          opacity: 0.9
           @media screen and ( max-width: 768px )
             margin-bottom: 20%
             letter-spacing: 0
@@ -136,7 +145,7 @@ main
           border: solid 2px #fff
           background: transparent
           position: relative
-          padding: 20px 86px 20px 34px
+          padding: 14px 86px 14px 34px
           &:hover
             background-image: linear-gradient(to top, #de9224, #e27311, #de9224)
             border: solid 2px transparent
@@ -157,7 +166,7 @@ main
     &:nth-child(2)
       background: #ffffff
       .container
-        padding: 66px 0 0 0
+        padding: 42px 0 0 0
         .row > div 
           padding: 12px
           .img_course
@@ -189,7 +198,7 @@ main
         padding: 56px 0 0 0
         @media screen and ( max-width: 570px )
           padding: 3% 15px
-        img 
+        .img_shadow 
           border-radius: 6px
           box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25)
         a 
@@ -229,12 +238,15 @@ main
             right: 33px
             margin: auto
             transform: rotate(180deg)
+        h4.text_shadow
+          text-shadow: rgba(31, 31, 36, 0.4) 1px 0 0.3px, 7px 5px 12px rgba(31, 31, 36, 0.2)
+          color: rgba(31, 31, 36, 0.4)
         h4 
           letter-spacing: 1.3px
           padding-top: 40px
-          color: rgba(31, 31, 36, 0.4)
+          
           font-size: 26px
-          text-shadow: rgba(31, 31, 36, 0.4) 1px 0 0.3px, 7px 20px 20px rgba(31, 31, 36, 0.2)
+          
           @media screen and ( max-width: 992px )
             margin-bottom: 48px
         .price_courses
@@ -271,16 +283,16 @@ main
           font-size: 18px
           margin: 0 auto
           display: flex
-          justify-content: space-evenly
+          justify-content: space-around
           color: rgba(31, 31, 36, 0.6)
-          // width: 50%
+          width: 50%
           @media screen and ( max-width: 480px )
             width: 100%
           &:hover 
             color: rgba(31, 31, 36, 1)
-        div 
-          position: absolute
-          left: 8%
+        // div 
+        //   position: absolute
+        //   left: 8%
       .form-row 
         @media screen and ( max-width: 992px )
           margin-bottom: 30px
@@ -398,8 +410,8 @@ main
       .form-group 
         display: flex
         align-items: flex-end
-        width: 69%
-        margin: 0
+        width: 76%
+        margin: 0 35px 0 0
         @media screen and ( max-width: 992px )
           display: block
           text-align: center
@@ -441,14 +453,31 @@ button.form_button_submit
   margin: auto
   @media screen and ( max-width: 768px )
     top: 109%
+.form-control
+  color: rgba(31, 31, 36, 0.4)
+  &:hover 
+    color: rgba(31, 31, 36, 1)
+.form-control::-webkit-input-placeholder 
+  color: rgba(31, 31, 36, 0.4)
 .section_form_page
-  padding: 9% 0 18% 0
+  padding: 6% 0 18% 0
   .container 
+    width: 65%
     padding: 15px 0 0 0!important
+    @media screen and ( max-width: 1200px )
+      width: 75%
+    @media screen and ( max-width: 968px )
+      width: 100%
   @media screen and ( max-width: 768px )
     padding: 9% 0 29% 0
   .form_page 
-    padding: 60px 55px
+    padding: 60px 46px
+    border: none
+    .form-control 
+      border: none
+      padding: 10px 17px
+      height: auto
+      
     @media screen and ( max-width: 768px )
       &:after 
         display: none
@@ -470,8 +499,10 @@ button.form_button_submit
         @media screen and ( max-width: 768px )
           flex: 0 0 100%
     .file_upload_button label 
-      width: 33%
+      width: 35%
       margin: 40px auto 0
+      @media screen and ( max-width: 992px )
+        width: 44%
       @media screen and ( max-width: 768px )
         width: 100%
 
@@ -499,6 +530,7 @@ footer
       font-size: 18px
       line-height: 1.67
       letter-spacing: 1.8px
+      opacity: 0.7
       @media screen and ( max-width: 992px )
         text-align: center
         margin: 20px 0
@@ -527,6 +559,8 @@ footer
     margin: 60px 15px
   .force-overflow
     min-height: auto
+    .training_center
+      text-indent: 30px
 
 // стили полосы прокрутки =====================================
 ::-webkit-scrollbar

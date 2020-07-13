@@ -27,6 +27,10 @@ header {
   color: #fff;
 }
 
+.form-inline a span {
+  opacity: 0.7;
+}
+
 .form-inline a:hover {
   color: #ffa21b;
 }
@@ -85,7 +89,6 @@ main section {
 
 main section h2:not(.training_title), main section .info_educational {
   letter-spacing: 1.5px;
-  font-weight: 600;
   color: rgba(31, 31, 36, 0.9);
 }
 
@@ -96,12 +99,20 @@ main section h2:not(.training_title):after, main section .info_educational:after
   border: solid 1px #ffa21b;
   background-color: #ffa21b;
   display: block;
-  margin: 35px auto 0;
+  margin: 22px auto 0;
 }
 
 main section:nth-child(1).section_screen_page_form {
   background: url("../img/form_page/form_page_home.jpg") no-repeat;
   height: 53vh;
+}
+
+main section:nth-child(1).section_screen_page_form .container {
+  padding-top: 9%;
+}
+
+main section:nth-child(1).section_screen_page_form .container h1 {
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width: 968px) {
@@ -113,6 +124,14 @@ main section:nth-child(1).section_screen_page_form {
 main section:nth-child(1).section_screen_page_course {
   background: url("../img/page_3/fone_home_page_3.jpg") no-repeat;
   height: 57vh;
+}
+
+main section:nth-child(1).section_screen_page_course .container {
+  padding-top: 9%;
+}
+
+main section:nth-child(1).section_screen_page_course .container h1 {
+  margin-bottom: 6%;
 }
 
 @media screen and (max-width: 968px) {
@@ -127,7 +146,7 @@ main section:nth-child(1).section_screen_page_home {
 }
 
 main section:nth-child(1).section_screen_page_home .container {
-  padding-top: 11%;
+  padding-top: 20%;
 }
 
 main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
@@ -151,10 +170,11 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
 }
 
 main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 6.2px;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 774px) {
@@ -191,9 +211,10 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
 }
 
 main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
-  margin-bottom: 8%;
+  margin-bottom: 10%;
   letter-spacing: 2.25px;
   font-size: 30px;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 768px) {
@@ -236,7 +257,7 @@ main section:nth-child(1).section_screen_page_home div .directory_button, main s
   border: solid 2px #fff;
   background: transparent;
   position: relative;
-  padding: 20px 86px 20px 34px;
+  padding: 14px 86px 14px 34px;
 }
 
 main section:nth-child(1).section_screen_page_home div .directory_button:hover, main section:nth-child(1).section_screen_page_course div .directory_button:hover, main section:nth-child(1).section_screen_page_form div .directory_button:hover {
@@ -266,7 +287,7 @@ main section:nth-child(2) {
 }
 
 main section:nth-child(2) .container {
-  padding: 66px 0 0 0;
+  padding: 42px 0 0 0;
 }
 
 main section:nth-child(2) .container .row > div {
@@ -320,7 +341,7 @@ main section:nth-child(3) .container {
   }
 }
 
-main section:nth-child(3) .container img {
+main section:nth-child(3) .container .img_shadow {
   border-radius: 6px;
   -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
           box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
@@ -383,12 +404,15 @@ main section:nth-child(3) .container a:after {
           transform: rotate(180deg);
 }
 
+main section:nth-child(3) .container h4.text_shadow {
+  text-shadow: rgba(31, 31, 36, 0.4) 1px 0 0.3px, 7px 5px 12px rgba(31, 31, 36, 0.2);
+  color: rgba(31, 31, 36, 0.4);
+}
+
 main section:nth-child(3) .container h4 {
   letter-spacing: 1.3px;
   padding-top: 40px;
-  color: rgba(31, 31, 36, 0.4);
   font-size: 26px;
-  text-shadow: rgba(31, 31, 36, 0.4) 1px 0 0.3px, 7px 20px 20px rgba(31, 31, 36, 0.2);
 }
 
 @media screen and (max-width: 992px) {
@@ -441,10 +465,10 @@ main section form .file_upload_button label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: rgba(31, 31, 36, 0.6);
+  width: 50%;
 }
 
 @media screen and (max-width: 480px) {
@@ -455,11 +479,6 @@ main section form .file_upload_button label {
 
 main section form .file_upload_button label:hover {
   color: #1f1f24;
-}
-
-main section form .file_upload_button div {
-  position: absolute;
-  left: 8%;
 }
 
 @media screen and (max-width: 992px) {
@@ -679,8 +698,8 @@ main .form_wrapper form .form-group {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 69%;
-  margin: 0;
+  width: 76%;
+  margin: 0 35px 0 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -752,12 +771,37 @@ button.form_button_submit:hover {
   }
 }
 
+.form-control {
+  color: rgba(31, 31, 36, 0.4);
+}
+
+.form-control:hover {
+  color: #1f1f24;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(31, 31, 36, 0.4);
+}
+
 .section_form_page {
-  padding: 9% 0 18% 0;
+  padding: 6% 0 18% 0;
 }
 
 .section_form_page .container {
+  width: 65%;
   padding: 15px 0 0 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .section_form_page .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .section_form_page .container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -767,7 +811,14 @@ button.form_button_submit:hover {
 }
 
 .section_form_page .form_page {
-  padding: 60px 55px;
+  padding: 60px 46px;
+  border: none;
+}
+
+.section_form_page .form_page .form-control {
+  border: none;
+  padding: 10px 17px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -810,8 +861,14 @@ button.form_button_submit:hover {
 }
 
 .section_form_page .form_page .file_upload_button label {
-  width: 33%;
+  width: 35%;
   margin: 40px auto 0;
+}
+
+@media screen and (max-width: 992px) {
+  .section_form_page .form_page .file_upload_button label {
+    width: 44%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -869,6 +926,7 @@ footer .container .addres_footer {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 1.8px;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 992px) {
@@ -931,6 +989,10 @@ footer .container form div:first-child {
 
 .scroll_text .force-overflow {
   min-height: auto;
+}
+
+.scroll_text .force-overflow .training_center {
+  text-indent: 30px;
 }
 
 ::-webkit-scrollbar {
