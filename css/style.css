@@ -62,7 +62,7 @@ header {
 
 .section_course_page_course {
   display: none;
-  background: #f2f2f2 !important;
+  padding-bottom: 196px;
 }
 
 @media screen and (max-width: 992px) {
