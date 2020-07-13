@@ -246,6 +246,7 @@ main section:nth-child(1).section_screen_page_home div .directory_button, main s
 main section:nth-child(1).section_screen_page_home div .directory_button:hover, main section:nth-child(1).section_screen_page_course div .directory_button:hover, main section:nth-child(1).section_screen_page_form div .directory_button:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#de9224), color-stop(#e27311), to(#de9224));
   background-image: linear-gradient(to top, #de9224, #e27311, #de9224);
+  border: solid 2px transparent;
 }
 
 main section:nth-child(1).section_screen_page_home div .directory_button:after, main section:nth-child(1).section_screen_page_course div .directory_button:after, main section:nth-child(1).section_screen_page_form div .directory_button:after {
@@ -682,7 +683,7 @@ main .form_wrapper form .form-group {
 
 main .form_wrapper form .form-group label {
   width: 80%;
-  margin: 0;
+  margin: 0 36px 0 0;
   font-size: 22px;
   letter-spacing: 1.8px;
   color: rgba(31, 31, 36, 0.7);
@@ -717,7 +718,7 @@ button.form_button_submit:hover {
 
 @media screen and (max-width: 992px) {
   button.form_button_submit {
-    width: 100%;
+    width: 93%;
   }
 }
 
@@ -737,6 +738,12 @@ button.form_button_submit:hover {
 
 .section_form_page {
   padding: 9% 0 18% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section_form_page {
+    padding: 9% 0 29% 0;
+  }
 }
 
 .section_form_page .form_page {
@@ -789,7 +796,7 @@ button.form_button_submit:hover {
 
 @media screen and (max-width: 768px) {
   .section_form_page .form_page .file_upload_button label {
-    width: 50%;
+    width: 100%;
   }
 }
 

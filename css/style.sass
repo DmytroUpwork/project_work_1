@@ -141,6 +141,7 @@ main
           padding: 20px 86px 20px 34px
           &:hover
             background-image: linear-gradient(to top, #de9224, #e27311, #de9224)
+            border: solid 2px transparent
           &:after 
             content: ''
             background: url(../img/arrow_button.svg) no-repeat
@@ -396,7 +397,7 @@ main
           width: 100%
         label 
           width: 80%
-          margin: 0
+          margin: 0 36px 0 0
           font-size: 22px
           letter-spacing: 1.8px
           color: rgba(31, 31, 36, 0.7)
@@ -417,7 +418,7 @@ button.form_button_submit
     background-image: linear-gradient(to top, #e27311, #de9224, #e27311)
     color: #fff
   @media screen and ( max-width: 992px )
-    width: 100%
+    width: 93%
 .form_button_submit_page_course 
   position: absolute
   top: 116%
@@ -428,6 +429,8 @@ button.form_button_submit
     top: 109%
 .section_form_page
   padding: 9% 0 18% 0
+  @media screen and ( max-width: 768px )
+    padding: 9% 0 29% 0
   .form_page 
     padding: 60px 55px
     @media screen and ( max-width: 768px )
@@ -454,7 +457,7 @@ button.form_button_submit
       width: 33%
       margin: 40px auto 0
       @media screen and ( max-width: 768px )
-        width: 50%
+        width: 100%
 
 // footer ===========================================================================
 footer 
