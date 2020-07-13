@@ -95,9 +95,7 @@ main section h2:not(.training_title), main section .info_educational {
 main section h2:not(.training_title):after, main section .info_educational:after {
   content: '';
   width: 200px;
-  height: 2px;
-  border: solid 1px #ffa21b;
-  background-color: #ffa21b;
+  border-bottom: solid 2px #ffa21b;
   display: block;
   margin: 22px auto 0;
 }
@@ -142,7 +140,6 @@ main section:nth-child(1).section_screen_page_course .container h1 {
 
 main section:nth-child(1).section_screen_page_home {
   background: url("../img/img_fone_home.jpg") no-repeat;
-  height: 100vh;
 }
 
 main section:nth-child(1).section_screen_page_home .container {
@@ -151,14 +148,7 @@ main section:nth-child(1).section_screen_page_home .container {
 
 main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
   background-size: cover;
-  overflow: hidden;
   background-position-x: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main section:nth-child(1).section_screen_page_home img, main section:nth-child(1).section_screen_page_course img, main section:nth-child(1).section_screen_page_form img {
@@ -233,7 +223,6 @@ main section:nth-child(1).section_screen_page_home div h3, main section:nth-chil
 
 main section:nth-child(1).section_screen_page_home div a, main section:nth-child(1).section_screen_page_course div a, main section:nth-child(1).section_screen_page_form div a {
   padding: 14px 35px;
-  text-decoration: none;
   border-radius: 8px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#de9224), color-stop(#e27311), color-stop(#e27311), to(#de9224));
   background-image: linear-gradient(to top, #de9224, #e27311, #e27311, #de9224);
@@ -357,7 +346,6 @@ main section:nth-child(3) .container a {
   width: 43%;
   font-size: 26px;
   padding: 5px 34px 7px;
-  text-decoration: none;
   border: 2px solid #fff;
   border-radius: 8px;
 }
@@ -553,15 +541,8 @@ main section:nth-child(4) .container .item:hover div {
 }
 
 main section:nth-child(4) .container .item img {
-  height: 450px;
   -webkit-box-shadow: 0px 19px 31.6px -1.6px rgba(31, 31, 36, 0.15);
           box-shadow: 0px 19px 31.6px -1.6px rgba(31, 31, 36, 0.15);
-}
-
-@media screen and (max-width: 768px) {
-  main section:nth-child(4) .container .item img {
-    height: 337px;
-  }
 }
 
 main section:nth-child(4) .container .owl-stage-outer {
