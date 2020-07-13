@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+  
 body 
-  // overflow-x: hidden!important
+  font-family: 'Open Sans', sans-serif
 * 
   outline: none!important 
 a:hover 
@@ -44,11 +46,14 @@ header
 
 main 
   section 
-    padding: 9% 0 9% 0
+    padding: 81px 0
     &:not(:first-child)
       @media screen and ( max-width: 992px )
         height: 100%
     h2:not(.training_title),  .info_educational
+      letter-spacing: 1.5px
+      font-weight: 600
+      color: rgba(31, 31, 36, 0.9)
       &:after 
         content: ''
         width: 200px
@@ -56,7 +61,7 @@ main
         border: solid 1px #ffa21b
         background-color: #ffa21b
         display: block
-        margin: 2% auto
+        margin: 35px auto 0
     // секция 1 главный экран ================================================
     &:nth-child(1).section_screen_page_form
       background: url('../img/form_page/form_page_home.jpg') no-repeat
@@ -71,57 +76,70 @@ main
     &:nth-child(1).section_screen_page_home
       background: url('../img/img_fone_home.jpg') no-repeat
       height: 100vh
+      .container
+        padding-top: 11%
     &:nth-child(1).section_screen_page_home, 
     &:nth-child(1).section_screen_page_course, 
     &:nth-child(1).section_screen_page_form     
       background-size: cover
-      position: relative
       overflow: hidden
       background-position-x: center
+      display: flex
+      align-items: center
       img 
         height: 100vh    
       div 
-        position: absolute
-        top: 39%
-        right: 0
-        left: 0
-        margin: auto
-        width: 100%
-        height: 0
-        @media screen and ( max-height: 414px )
-          top: 24%
-        h1 
-          font-size: 4.5rem
-          padding: 0 20px
+        h1, h3 
+          text-shadow: 0px 7px 21.6px rgba(31, 31, 36, 0.3)
+        h1
+          margin-bottom: 20px 
+          font-size: 50px
+          font-weight: bold
+          letter-spacing: 6.2px
+          font-family: 'Open Sans', sans-serif
           @media screen and ( max-width: 774px )
             font-size: 3.5rem
           @media screen and ( max-width: 620px )
             font-size: 2.5rem
           @media screen and ( max-width: 470px )
             font-size: 2.1rem
+            letter-spacing: 0
           @media screen and ( max-width: 470px )
             font-size: 1.8rem
+            letter-spacing: 0
           @media screen and ( max-height: 414px )
             font-size: 2.5rem
+            letter-spacing: 0
         h3
           margin-bottom: 8%
-          padding: 0 20px
+          font-family: 'Open Sans', sans-serif
+          letter-spacing: 2.25px
+          font-size: 30px
+          @media screen and ( max-width: 768px )
+            margin-bottom: 20%
+            letter-spacing: 0
           @media screen and ( max-height: 320px )
             font-size: 1rem
+            letter-spacing: 0
         a 
-          padding: 20px 35px
+          padding: 14px 35px
           text-decoration: none
           border-radius: 8px
-          background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+          background-image: linear-gradient(to top, #de9224, #e27311, #e27311, #de9224)
+          font-size: 24px
+          font-weight: 600
+          letter-spacing: 0.3px
           &:hover 
-            background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311)
+            background-image: linear-gradient(to top, #e27311, #de9224, #e27311)
+          @media screen and ( max-width: 372px )
+            font-size: 20px
         .directory_button 
           border: solid 2px #fff
           background: transparent
           position: relative
           padding: 20px 86px 20px 34px
           &:hover
-            background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+            background-image: linear-gradient(to top, #de9224, #e27311, #de9224)
           &:after 
             content: ''
             background: url(../img/arrow_button.svg) no-repeat
@@ -139,7 +157,7 @@ main
     &:nth-child(2)
       background: #ffffff
       .container
-        padding: 6% 0 0 0
+        padding: 66px 0 0 0
         .row > div 
           padding: 12px
           .img_course
@@ -161,15 +179,14 @@ main
                 width: 20%
                 height: 67px
               h5 
-                color: #000
+                color: rgba(31, 31, 36, 0.8)
                 width: 100%
     // секция 3 section_course "курсы" =========================================
     
     &:nth-child(3)
       background: #f2f2f2
-      padding: 9% 0 18% 0
       .container
-        padding: 3% 0 0 0
+        padding: 56px 0 0 0
         @media screen and ( max-width: 570px )
           padding: 3% 15px
         img 
@@ -186,14 +203,17 @@ main
           font-size: 26px
           padding: 5px 34px 7px
           text-decoration: none
-          border: solid 2px #fff
+          border: 2px solid #fff
           border-radius: 8px
+          @media screen and ( max-width: 1200px )
+            width: 52%
           @media screen and ( max-width: 570px )
             width: 70%
           @media screen and ( max-width: 434px )
             top: 42%
           &:hover
-            background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+            background-image: linear-gradient(to top, #de9224, #e27311, #de9224)
+            border: 2px solid transparent
           &:after 
             content: ''
             background: url(../img/arrow_button.svg) no-repeat
@@ -208,6 +228,9 @@ main
             margin: auto
             transform: rotate(180deg)
         h4 
+          letter-spacing: 1.3px
+          color: rgba(31, 31, 36, 0.8)
+          font-size: 26px
           @media screen and ( max-width: 992px )
             margin-bottom: 48px
         .price_courses
@@ -254,8 +277,9 @@ main
     &:nth-child(4) 
       background: #fff
       overflow-x: hidden 
+      padding-bottom: 90px
       .container 
-        padding: 0 27px
+        padding: 56px 27px 0
         .owl-theme .owl-nav [class*=owl-]:hover
           background: url('../img/arrow_carousel.svg') no-repeat
           width: 39px
@@ -283,17 +307,21 @@ main
             opacity: 0 
             z-index: 99999
             .btn
-              color: #ffeb3b
+              color: rgba(255, 162, 27, 0.8)
               transition: 0.2s
+              border-bottom: 2px solid rgba(255, 162, 27, 0.8)
+              padding: 0
+              border-radius: 0
               &:focus 
                 box-shadow: none
               &:hover 
                 color: rgba(255, 162, 27, 1)
+                border-bottom: 2px solid rgba(255, 162, 27, 1)
           &:hover div
             opacity: 1
           img 
             height: 450px
-            box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.05)
+            box-shadow: 0px 19px 31.6px -1.6px rgba(31, 31, 36, 0.15)
             @media screen and ( max-width: 768px )
               height: 337px
         .owl-stage-outer 
@@ -316,7 +344,7 @@ main
             // width: 120%
             left: -10%
           @media screen and ( max-width: 620px )
-            top: 100%
+            top: 110%
             justify-content: center
             width: 100%
             left: 0
@@ -346,11 +374,13 @@ main
     background-color: #f2f2f2
     @media screen and ( max-width: 992px )
       margin-top: 64px
+    .container 
+      max-width: 100%
+      padding: 46px 40px 50px 40px 
     form 
       display: flex
       justify-content: space-between
       align-items: center
-      padding: 20px 0
       @media screen and ( max-width: 992px )
         display: block
         text-align: center
@@ -367,6 +397,8 @@ main
           width: 80%
           margin: 0
           font-size: 22px
+          letter-spacing: 1.8px
+          color: rgba(31, 31, 36, 0.7)
         input 
           height: 60px
           font-size: 22px
@@ -379,9 +411,9 @@ button.form_button_submit
   font-size: 22px
   border-radius: 8px
   color: #fff
-  background-image: linear-gradient(to top, #ffa21b, #e27311, #ffa21b)
+  background-image: linear-gradient(to top, #de9224, #e27311, #de9224)
   &:hover 
-    background-image: linear-gradient(to top, #e27311, #ffa21b, #e27311)
+    background-image: linear-gradient(to top, #e27311, #de9224, #e27311)
     color: #fff
   @media screen and ( max-width: 992px )
     width: 100%
@@ -431,6 +463,9 @@ footer
   .container 
     display: flex
     justify-content: space-between
+    align-items: center
+    max-width: 100%
+    padding: 0 40px
     @media screen and ( max-width: 992px )
       flex-flow: wrap
       flex-direction: column
@@ -441,10 +476,15 @@ footer
     .logo_footer 
       @media screen and ( max-width: 992px )
         order: -1
+      img 
+        width: auto
     form 
-      display: block
+      display: flex
+      flex-direction: column
+      div:first-child 
+        padding-bottom: 24px
       @media screen and ( max-width: 992px )
-        display: flex
+        // display: flex
         justify-content: center
 
 // текстовый скролл ===========================================
