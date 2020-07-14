@@ -1000,6 +1000,10 @@ footer .container form div:first-child {
           transform: rotate(-42deg);
 }
 
+.select_tick:hover:after, .select_tick:hover:before {
+  border-bottom: 1px solid #e27411;
+}
+
 .class_active:after {
   right: 11.5%;
   -webkit-transform: rotate(-42deg);
