@@ -50,19 +50,14 @@ $(document).ready(function () {
     $(".select_tick").not($target).removeClass("class_active");
   });
 
-
-  $(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".select_tick"); // тут указываем ID элемента
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-      // div.slideUp(500); // скрываем его
+  // закрытие стрелок селекта по клику вне элемента =====================
+  $(document).mouseup(function (e){ 
+		var div = $(".select_tick");
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
       $(".select_tick").removeClass("class_active");
 		}
 	});
-
-
-
-
 
 });
 
