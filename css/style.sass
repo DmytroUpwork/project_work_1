@@ -141,7 +141,7 @@ main
                 color: rgba(31, 31, 36, 0.8)
                 width: 100%
     // секция 3 section_course "курсы" =========================================
-    &:nth-child(3)
+    &#section_course
       background: #f2f2f2
       .container
         padding: 56px 0 0 0
@@ -240,7 +240,7 @@ main
         @media screen and ( max-width: 992px )
           margin-bottom: 30px
     // секция 4 "наши учителя" карсель-слайдер ==============================================
-    &:nth-child(4) 
+    &:nth-child(4):not(.section_course_page_course)
       background: #fff
       overflow-x: hidden 
       padding-bottom: 90px
@@ -503,10 +503,11 @@ footer
       display: none
 .section_course_page_course 
   // display: none
-  // opacity: 0
-  // position: absolute
   padding-bottom: 196px
+  background: #f2f2f2
   transition: 0.2s
+  .container 
+    padding-top: 93px
   @media screen and ( max-width: 992px )
     padding-bottom: 23%
 // .active_visible
