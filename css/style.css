@@ -108,34 +108,7 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
 
 @media screen and (max-width: 774px) {
   main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-    font-size: 2.1rem;
-    letter-spacing: 0;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-    font-size: 1.8rem;
-    letter-spacing: 0;
-  }
-}
-
-@media screen and (max-height: 414px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
-    font-size: 2.5rem;
-    letter-spacing: 0;
+    font-size: 7vw;
   }
 }
 
@@ -175,9 +148,9 @@ main section:nth-child(1).section_screen_page_home div a:hover, main section:nth
   background-image: linear-gradient(to top, #e27311, #de9224, #e27311);
 }
 
-@media screen and (max-width: 372px) {
+@media screen and (max-width: 420px) {
   main section:nth-child(1).section_screen_page_home div a, main section:nth-child(1).section_screen_page_course div a, main section:nth-child(1).section_screen_page_form div a {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
