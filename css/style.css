@@ -78,7 +78,7 @@ header {
 }
 
 main section {
-  padding: 81px 0;
+  padding: 69px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -105,18 +105,8 @@ main section:nth-child(1).section_screen_page_form {
   height: 53vh;
 }
 
-main section:nth-child(1).section_screen_page_form .container {
-  padding-top: 7%;
-}
-
 main section:nth-child(1).section_screen_page_form .container h1 {
   margin-bottom: 5%;
-}
-
-@media screen and (max-width: 968px) {
-  main section:nth-child(1).section_screen_page_form {
-    height: 100vh;
-  }
 }
 
 main section:nth-child(1).section_screen_page_course {
@@ -124,38 +114,13 @@ main section:nth-child(1).section_screen_page_course {
   height: 57vh;
 }
 
-main section:nth-child(1).section_screen_page_course .container {
-  padding-top: 8%;
-}
-
-@media screen and (max-width: 992px) {
-  main section:nth-child(1).section_screen_page_course .container {
-    padding-top: 20%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  main section:nth-child(1).section_screen_page_course .container {
-    padding-top: 31%;
-  }
-}
-
 main section:nth-child(1).section_screen_page_course .container h1 {
   margin-bottom: 6%;
 }
 
-@media screen and (max-width: 968px) {
-  main section:nth-child(1).section_screen_page_course {
-    height: 100vh;
-  }
-}
-
 main section:nth-child(1).section_screen_page_home {
   background: url("../img/img_fone_home.jpg") no-repeat;
-}
-
-main section:nth-child(1).section_screen_page_home .container {
-  padding-top: 20%;
+  height: 100vh;
 }
 
 main section:nth-child(1).section_screen_page_home .container a {
@@ -167,6 +132,21 @@ main section:nth-child(1).section_screen_page_home .container a {
 main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
   background-size: cover;
   background-position-x: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+@media screen and (max-width: 968px) {
+  main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100vh;
+  }
 }
 
 main section:nth-child(1).section_screen_page_home img, main section:nth-child(1).section_screen_page_course img, main section:nth-child(1).section_screen_page_form img {
