@@ -747,7 +747,7 @@ button.form_button_submit:hover {
 .form-control {
   color: rgba(31, 31, 36, 0.4);
   border: none;
-  padding: 10px 15px;
+  padding: 10px 30px;
   height: auto;
 }
 
@@ -970,5 +970,39 @@ footer .container form div:first-child {
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: #D39C74;
+}
+
+.select_tick {
+  position: relative;
+  display: inline-block;
+}
+
+.select_tick:after, .select_tick:before {
+  content: '';
+  border-bottom: 1px solid #464649;
+  position: absolute;
+  top: 48%;
+  text-align: center;
+  width: 3.6%;
+  pointer-events: none;
+}
+
+.select_tick:after {
+  right: 11.5%;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+.select_tick:before {
+  right: 9%;
+  -webkit-transform: rotate(-42deg);
+          transform: rotate(-42deg);
+}
+
+select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 /*# sourceMappingURL=style.css.map */

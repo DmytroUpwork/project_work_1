@@ -462,7 +462,7 @@ button.form_button_submit
 .form-control
   color: rgba(31, 31, 36, 0.4)
   border: none
-  padding: 10px 15px
+  padding: 10px 30px
   height: auto
   &:hover 
     color: rgba(31, 31, 36, 1)
@@ -578,3 +578,31 @@ footer
 ::-webkit-scrollbar-thumb 
   border-radius: 2px
   background-color: #D39C74
+
+
+
+
+
+.select_tick
+  position: relative
+  display: inline-block
+  &:after, &:before 
+    content: ''
+    border-bottom: 1px solid #464649
+    position: absolute
+    top: 48%
+    text-align: center
+    width: 3.6%
+    pointer-events: none
+  &:after 
+    right: 11.5%
+    transform: rotate(42deg)
+  &:before
+    right: 9%
+    transform: rotate(-42deg)
+
+select 
+  padding-right: 25px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
