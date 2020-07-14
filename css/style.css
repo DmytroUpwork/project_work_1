@@ -980,7 +980,7 @@ footer .container form div:first-child {
 
 .select_tick:after, .select_tick:before {
   content: '';
-  border-bottom: 1px solid #464649;
+  border-bottom: 1px solid rgba(31, 31, 36, 0.4);
   position: absolute;
   top: 48%;
   text-align: center;
