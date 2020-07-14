@@ -1,9 +1,6 @@
-// document.addEventListener("DOMContentLoaded", function () {
-
-// });
-
 $(document).ready(function () {
-      //owl carousel ===================================================
+
+  //owl carousel ===================================================
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 35,
@@ -21,17 +18,9 @@ $(document).ready(function () {
       },
     },
   });
-
-
-  // изменение значения селект =====================================
-  $(".building").on("click", function () {
-    var id = $(this).attr("data-n");
-    $(".form-control")
-      .find("[value=" + id + "]")
-      .prop("selected", true);
-  });
-
-  // временный скрипт прокрутки=======================================
+  
+  
+  //  скрипт прокрутки к якорям =======================================
   $("a[href*=#]").on("click", function (e) {
     var anchor = $(this);
     $("html, body")
@@ -46,10 +35,31 @@ $(document).ready(function () {
     return false;
   });
 
+
+  // изменение значения селект =====================================
+  $(".building").on("click", function () {
+    var id = $(this).attr("data-n");
+    $(".form-control")
+      .find("[value=" + id + "]")
+      .prop("selected", true);
+  });
+
+  // стрелка селекта =============================================
   $(".select_tick").click(function () {
     var $target = $(this).toggleClass("class_active");
     $(".select_tick").not($target).removeClass("class_active");
   });
+
+
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".select_tick"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      // div.slideUp(500); // скрываем его
+      $(".select_tick").removeClass("class_active");
+		}
+	});
+
 
 
 
