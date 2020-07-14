@@ -894,9 +894,8 @@ footer .container form div:first-child {
 }
 
 .section_course_page_course {
+  display: none;
   padding-bottom: 196px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 @media screen and (max-width: 992px) {
@@ -905,8 +904,8 @@ footer .container form div:first-child {
   }
 }
 
-.hidden {
-  display: none;
+.active_visible {
+  display: block;
 }
 
 .scroll_text {
