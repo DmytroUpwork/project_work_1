@@ -26,7 +26,7 @@ $(document).ready(function () {
   // изменение значения селект =====================================
   $(".building").on("click", function () {
     var id = $(this).attr("data-n");
-    $(".select")
+    $(".form-control")
       .find("[value=" + id + "]")
       .prop("selected", true);
   });
@@ -45,7 +45,7 @@ $(document).ready(function () {
     e.preventDefault();
     return false;
   });
-  
+
   $(".select_tick").click(function () {
     var $target = $(this).toggleClass("class_active");
     $(".select_tick").not($target).removeClass("class_active");
