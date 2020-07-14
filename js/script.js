@@ -45,7 +45,10 @@ $(document).ready(function () {
     e.preventDefault();
     return false;
   });
-
+  
+  $(".select_tick").on("click", function () {
+    $(this).toggleClass("class_active");
+  });
 
 
 

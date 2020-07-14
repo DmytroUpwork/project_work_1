@@ -999,6 +999,18 @@ footer .container form div:first-child {
           transform: rotate(-42deg);
 }
 
+.class_active:after {
+  right: 11.5%;
+  -webkit-transform: rotate(-42deg);
+          transform: rotate(-42deg);
+}
+
+.class_active:before {
+  right: 9%;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
 select {
   padding-right: 25px;
   -webkit-appearance: none;
