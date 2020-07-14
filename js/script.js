@@ -46,9 +46,11 @@ $(document).ready(function () {
     return false;
   });
   
-  $(".select_tick").on("click", function () {
-    $(this).toggleClass("class_active");
+  $(".select_tick").click(function () {
+    var $target = $(this).toggleClass("class_active");
+    $(".select_tick").not($target).removeClass("class_active");
   });
+
 
 
 
