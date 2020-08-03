@@ -1364,6 +1364,22 @@ footer .container form div:first-child {
   padding: 20px 0 30px;
 }
 
+.section_table .container table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.section_table .container table td, .section_table .container table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.section_table .container table tr:nth-child(even) {
+  background-color: #ddd;
+}
+
 .section_educational_center .container {
   max-width: 100%;
   padding: 0 40px;
