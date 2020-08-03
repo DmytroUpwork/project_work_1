@@ -44,68 +44,78 @@ main
     // секция 1 главный экран ================================================
     &:nth-child(1).section_screen_page_form
       background: url('../img/form_page/form_page_home.jpg') no-repeat
-      height: 53vh
-      padding: 56px 0
+      background-size: cover
+      padding: 172px 0 56px 0
       .container
         h1 
-          margin-bottom: 5%     
+          margin-bottom: 5%  
+          font-size: 50px 
+          @media screen and ( max-width: 392px )
+            font-size: 30px
+              
     &:nth-child(1).section_screen_page_course
       background: url('../img/page_3/fone_home_page_3.jpg') no-repeat
-      height: 49vh
-      padding: 56px 0
+      background-size: cover
+      padding: 172px 0 56px 0
       .container
         position: relative
         h1 
-          margin-bottom: 46px  
-
-
-
-
-        a.directory_button
-          position: relative
-          color: #fff
-          font-size: 24px
-          padding: 12px 92px 15px 21px
-          border: 2px solid #fff
-          border-radius: 8px
-          -webkit-backface-visibility: hidden   
-          &:after 
-            content: ''
-            background: url(../img/arrow_button.svg) no-repeat
-            position: absolute
-            background-size: cover
-            width: 28px
-            background-position-y: center
-            height: 19px
-            top: 0
-            bottom: 4px
-            right: 26px
-            margin: auto
-            transform: rotate(180deg)
-            z-index: 3    
-          &:before 
-            position: absolute
-            content: ""
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            border-radius: 0.3em
-            background: linear-gradient(to top, #e27311, #de9224, #e27311)
-            transition: opacity 0.5s ease-out
-            z-index: 2
-            opacity: 0
-          &:hover 
-            border: 2px solid transparent
-            &:before
-              opacity: 1              
-            span 
-              opacity: 1
-            &:after  
-              opacity: 1
+          margin-bottom: 46px
+          font-size: 50px 
+          @media screen and ( max-width: 392px )
+            font-size: 30px
+             
+    &:nth-child(1).section_screen_page_course, 
+    &:nth-child(1).section_screen_page_form 
+      display: flex
+      align-items: flex-end
+      a.directory_button
+        position: relative
+        color: #fff
+        font-size: 24px
+        padding: 12px 92px 15px 21px
+        border: 2px solid #fff
+        border-radius: 8px
+        -webkit-backface-visibility: hidden  
+        @media screen and ( max-width: 392px )
+          font-size: 18px 
+        &:after 
+          content: ''
+          background: url(../img/arrow_button.svg) no-repeat
+          position: absolute
+          background-size: cover
+          width: 28px
+          background-position-y: center
+          height: 19px
+          top: 0
+          bottom: 4px
+          right: 26px
+          margin: auto
+          transform: rotate(180deg)
+          z-index: 3    
+        &:before 
+          position: absolute
+          content: ""
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          border-radius: 0.3em
+          background: linear-gradient(to top, #e27311, #de9224, #e27311)
+          transition: opacity 0.5s ease-out
+          z-index: 2
+          opacity: 0
+        &:hover 
+          border: 2px solid transparent
+          &:before
+            opacity: 1              
           span 
-            position: relative
-            z-index: 3  
+            opacity: 1
+          &:after  
+            opacity: 1
+        span 
+          position: relative
+          z-index: 3  
         
 
 
@@ -118,10 +128,10 @@ main
 
     &:nth-child(1).section_screen_page_home
       background: url('../img/img_fone_home.jpg') no-repeat
-      height: 85vh
-      padding: 86px 0
-      @media screen and ( max-width: 1280px )
-        height: 70vh
+      background-size: cover
+      padding: 258px 0 86px 0
+      display: flex
+      align-items: flex-end
       
       .container
         
@@ -164,21 +174,7 @@ main
             z-index: 3
             font-weight: 500
             letter-spacing: 0.7px
-          
-    &:nth-child(1).section_screen_page_home, 
-    &:nth-child(1).section_screen_page_course, 
-    &:nth-child(1).section_screen_page_form     
-      background-size: cover
-      background-position-x: center
-      display: flex
-      flex-wrap: wrap
-      align-content: flex-end
-      @media screen and ( max-width: 968px )
-        align-content: center
-        height: 100vh
-      @media screen and ( max-width: 812px ) and (max-height: 460px)
-        padding: 30px 0
-        align-content: flex-end
+    
 
       img 
         height: 100vh    
@@ -299,13 +295,9 @@ main
             width: 52%
           @media screen and ( max-width: 992px )
             top: 63%
-
-
           @media screen and ( max-width: 778px )
             width: 52%
             top: 50%
-          
-          
           @media screen and ( max-width: 570px )
             width: 70%
             top: 51%
@@ -368,7 +360,7 @@ main
           @media screen and ( max-width: 480px )
             width: 100%
           &:hover 
-            color: rgba(31, 31, 36, 1)
+            color: rgba(31, 31, 36, 0.7)
       .form-row 
         @media screen and ( max-width: 992px )
           margin-bottom: 30px
@@ -433,7 +425,6 @@ main
           justify-content: space-between
           left: 0
           margin-left: -72px
-          // width: calc(100% + 141px)
           @media screen and ( max-width: 640px )
             top: 110%
             justify-content: center
@@ -465,6 +456,8 @@ main
               right: -1314px
             @media screen and ( max-width: 1400px )
               right: -1272px
+            @media screen and ( max-width: 1366px )
+              right: -1242px
             @media screen and ( max-width: 1280px )
               right: -1151px
             @media screen and ( max-width: 1200px )
@@ -474,9 +467,11 @@ main
             @media screen and ( max-width: 1024px )
               right: -926px
             @media screen and ( max-width: 854px )
-              right: -756px
+              right: -756px           
             @media screen and ( max-width: 800px )
               right: -700px
+            @media screen and ( max-width: 736px )
+              right: -639px
             @media screen and ( max-width: 640px )
               position: relative
               right: 0
@@ -582,6 +577,9 @@ button.form_button_submit
     color: #fff
   @media screen and ( max-width: 992px )
     width: 93%
+
+
+
 button.form_button_submit_page_course 
   position: absolute
   top: 107%
@@ -593,30 +591,44 @@ button.form_button_submit_page_course
   letter-spacing: 0.9px
   @media screen and ( max-width: 768px )
     top: 109%
+
+
+
+
+
 .form-control
   color: rgba(31, 31, 36, 0.4)
   border: none
-  padding: 10px 41px 10px 30px
+  padding: 10px 41px 10px 17px
   height: auto
   text-overflow: ellipsis
+  font-weight: 600
+  letter-spacing: 0.6px
   &:hover 
-    color: rgba(31, 31, 36, 1)
+    color: rgba(31, 31, 36, 0.6)
+  &::placeholder 
+    color: rgba(31, 31, 36, 0.4)
 input[type="email"]::placeholder 
   color: rgba(31, 31, 36, 0.5)
   font-weight: 600
   letter-spacing: 2px
 .section_form_page
-  padding: 6% 0 16% 0
+  padding: 6% 0 9% 0
   .container 
-    width: 65%
+    width: calc(100% - 141px)
     @media screen and ( max-width: 1200px )
-      width: 75%
-    @media screen and ( max-width: 968px )
+      width: calc(100% - 42px)
+    @media screen and ( max-width: 768px )
       width: 100%
+      padding: 0!important
+    form 
+      .form-control
+        padding: 10px 41px 10px 25px
+        font-size: 20px
   @media screen and ( max-width: 768px )
     padding: 9% 0 29% 0
   .form_page 
-    padding: 60px 46px
+    padding: 60px 46px 40px
     border: none
       
     @media screen and ( max-width: 768px )
@@ -625,10 +637,10 @@ input[type="email"]::placeholder
     &:after 
       content: ''
       width: 1px
-      height: 49%
+      height: 62%
       background-color: #ddd6d6
       position: absolute
-      top: 8%
+      top: 5%
       left: 0
       right: 0
       margin: auto
@@ -639,13 +651,27 @@ input[type="email"]::placeholder
         flex: 0 0 45%
         @media screen and ( max-width: 768px )
           flex: 0 0 100%
+
+
+
     .file_upload_button label 
-      width: 35%
+      width: 357px
       margin: 40px auto 0
+      padding: 10px 71px 10px 21px
+      font-size: 20px
+      @media screen and ( max-width: 1200px )
+        width: 360px
       @media screen and ( max-width: 992px )
-        width: 44%
+        width: 354px
+      div 
+        margin-right: 44px
+      // @media screen and ( max-width: 992px )
+      //   width: 44%
       @media screen and ( max-width: 768px )
         width: 100%
+        margin: 10px auto 0
+        font-size: 16px
+        padding: 10px 30px 10px 21px
 
 // footer ===========================================================================
 footer 
@@ -769,7 +795,7 @@ footer
     h4 
       letter-spacing: 2.5px
   @media screen and ( max-width: 992px )
-    padding-bottom: 23%
+    padding-bottom: 208px
 .hidden 
   display: none
 
@@ -782,7 +808,7 @@ footer
         .row 
           padding-top: 29px
           img 
-            width: 180px
+            // width: 180px
             border-radius: 4px
             border: solid 2px #ffffff
             box-shadow: 0px 6px 5px 2px rgba(235,232,235,1)
@@ -845,6 +871,7 @@ footer
     transform: rotate(42deg)
 select 
   padding-right: 25px
+  cursor: pointer
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none

@@ -71,18 +71,25 @@ main section .info_educational span {
 
 main section:nth-child(1).section_screen_page_form {
   background: url("../img/form_page/form_page_home.jpg") no-repeat;
-  height: 53vh;
-  padding: 56px 0;
+  background-size: cover;
+  padding: 172px 0 56px 0;
 }
 
 main section:nth-child(1).section_screen_page_form .container h1 {
   margin-bottom: 5%;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 392px) {
+  main section:nth-child(1).section_screen_page_form .container h1 {
+    font-size: 30px;
+  }
 }
 
 main section:nth-child(1).section_screen_page_course {
   background: url("../img/page_3/fone_home_page_3.jpg") no-repeat;
-  height: 49vh;
-  padding: 56px 0;
+  background-size: cover;
+  padding: 172px 0 56px 0;
 }
 
 main section:nth-child(1).section_screen_page_course .container {
@@ -91,9 +98,25 @@ main section:nth-child(1).section_screen_page_course .container {
 
 main section:nth-child(1).section_screen_page_course .container h1 {
   margin-bottom: 46px;
+  font-size: 50px;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button {
+@media screen and (max-width: 392px) {
+  main section:nth-child(1).section_screen_page_course .container h1 {
+    font-size: 30px;
+  }
+}
+
+main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main section:nth-child(1).section_screen_page_course a.directory_button, main section:nth-child(1).section_screen_page_form a.directory_button {
   position: relative;
   color: #fff;
   font-size: 24px;
@@ -103,7 +126,13 @@ main section:nth-child(1).section_screen_page_course .container a.directory_butt
   -webkit-backface-visibility: hidden;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:after {
+@media screen and (max-width: 392px) {
+  main section:nth-child(1).section_screen_page_course a.directory_button, main section:nth-child(1).section_screen_page_form a.directory_button {
+    font-size: 18px;
+  }
+}
+
+main section:nth-child(1).section_screen_page_course a.directory_button:after, main section:nth-child(1).section_screen_page_form a.directory_button:after {
   content: '';
   background: url(../img/arrow_button.svg) no-repeat;
   position: absolute;
@@ -120,7 +149,7 @@ main section:nth-child(1).section_screen_page_course .container a.directory_butt
   z-index: 3;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:before {
+main section:nth-child(1).section_screen_page_course a.directory_button:before, main section:nth-child(1).section_screen_page_form a.directory_button:before {
   position: absolute;
   content: "";
   top: 0;
@@ -136,37 +165,37 @@ main section:nth-child(1).section_screen_page_course .container a.directory_butt
   opacity: 0;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:hover {
+main section:nth-child(1).section_screen_page_course a.directory_button:hover, main section:nth-child(1).section_screen_page_form a.directory_button:hover {
   border: 2px solid transparent;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:hover:before {
+main section:nth-child(1).section_screen_page_course a.directory_button:hover:before, main section:nth-child(1).section_screen_page_form a.directory_button:hover:before {
   opacity: 1;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:hover span {
+main section:nth-child(1).section_screen_page_course a.directory_button:hover span, main section:nth-child(1).section_screen_page_form a.directory_button:hover span {
   opacity: 1;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button:hover:after {
+main section:nth-child(1).section_screen_page_course a.directory_button:hover:after, main section:nth-child(1).section_screen_page_form a.directory_button:hover:after {
   opacity: 1;
 }
 
-main section:nth-child(1).section_screen_page_course .container a.directory_button span {
+main section:nth-child(1).section_screen_page_course a.directory_button span, main section:nth-child(1).section_screen_page_form a.directory_button span {
   position: relative;
   z-index: 3;
 }
 
 main section:nth-child(1).section_screen_page_home {
   background: url("../img/img_fone_home.jpg") no-repeat;
-  height: 85vh;
-  padding: 86px 0;
-}
-
-@media screen and (max-width: 1280px) {
-  main section:nth-child(1).section_screen_page_home {
-    height: 70vh;
-  }
+  background-size: cover;
+  padding: 258px 0 86px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 main section:nth-child(1).section_screen_page_home .container form.form_button_link {
@@ -228,43 +257,15 @@ main section:nth-child(1).section_screen_page_home .container form.form_button_l
   letter-spacing: 0.7px;
 }
 
-main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
-  background-size: cover;
-  background-position-x: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-@media screen and (max-width: 968px) {
-  main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 812px) and (max-height: 460px) {
-  main section:nth-child(1).section_screen_page_home, main section:nth-child(1).section_screen_page_course, main section:nth-child(1).section_screen_page_form {
-    padding: 30px 0;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-  }
-}
-
-main section:nth-child(1).section_screen_page_home img, main section:nth-child(1).section_screen_page_course img, main section:nth-child(1).section_screen_page_form img {
+main section:nth-child(1).section_screen_page_home img {
   height: 100vh;
 }
 
-main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h1, main section:nth-child(1).section_screen_page_form div h3 {
+main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_home div h3 {
   text-shadow: 0px 7px 21.6px rgba(31, 31, 36, 0.5);
 }
 
-main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+main section:nth-child(1).section_screen_page_home div h1 {
   margin-bottom: 11px;
   font-size: 62px;
   font-weight: 600;
@@ -273,24 +274,24 @@ main section:nth-child(1).section_screen_page_home div h1, main section:nth-chil
 }
 
 @media screen and (max-width: 1280px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+  main section:nth-child(1).section_screen_page_home div h1 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 774px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+  main section:nth-child(1).section_screen_page_home div h1 {
     font-size: 7vw;
   }
 }
 
 @media screen and (max-width: 812px) and (max-height: 460px) {
-  main section:nth-child(1).section_screen_page_home div h1, main section:nth-child(1).section_screen_page_course div h1, main section:nth-child(1).section_screen_page_form div h1 {
+  main section:nth-child(1).section_screen_page_home div h1 {
     font-size: 34px;
   }
 }
 
-main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
+main section:nth-child(1).section_screen_page_home div h3 {
   margin-bottom: 73px;
   letter-spacing: 2.25px;
   font-size: 30px;
@@ -299,21 +300,21 @@ main section:nth-child(1).section_screen_page_home div h3, main section:nth-chil
 }
 
 @media screen and (max-width: 768px) {
-  main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
+  main section:nth-child(1).section_screen_page_home div h3 {
     margin-bottom: 20%;
     letter-spacing: 0;
   }
 }
 
 @media screen and (max-height: 320px) {
-  main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
+  main section:nth-child(1).section_screen_page_home div h3 {
     font-size: 1rem;
     letter-spacing: 0;
   }
 }
 
 @media screen and (max-width: 812px) and (max-height: 460px) {
-  main section:nth-child(1).section_screen_page_home div h3, main section:nth-child(1).section_screen_page_course div h3, main section:nth-child(1).section_screen_page_form div h3 {
+  main section:nth-child(1).section_screen_page_home div h3 {
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -566,7 +567,7 @@ main section form:not(.form_button_link) .file_upload_button label div {
 }
 
 main section form:not(.form_button_link) .file_upload_button label:hover {
-  color: #1f1f24;
+  color: rgba(31, 31, 36, 0.7);
 }
 
 @media screen and (max-width: 992px) {
@@ -750,6 +751,12 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .
   }
 }
 
+@media screen and (max-width: 1366px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1242px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
     right: -1151px;
@@ -783,6 +790,12 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .
 @media screen and (max-width: 800px) {
   main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
     right: -700px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -639px;
   }
 }
 
@@ -943,13 +956,31 @@ button.form_button_submit_page_course {
 .form-control {
   color: rgba(31, 31, 36, 0.4);
   border: none;
-  padding: 10px 41px 10px 30px;
+  padding: 10px 41px 10px 17px;
   height: auto;
   text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.6px;
 }
 
 .form-control:hover {
-  color: #1f1f24;
+  color: rgba(31, 31, 36, 0.6);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(31, 31, 36, 0.4);
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgba(31, 31, 36, 0.4);
+}
+
+.form-control::-ms-input-placeholder {
+  color: rgba(31, 31, 36, 0.4);
+}
+
+.form-control::placeholder {
+  color: rgba(31, 31, 36, 0.4);
 }
 
 input[type="email"]::-webkit-input-placeholder {
@@ -977,23 +1008,29 @@ input[type="email"]::placeholder {
 }
 
 .section_form_page {
-  padding: 6% 0 16% 0;
+  padding: 6% 0 9% 0;
 }
 
 .section_form_page .container {
-  width: 65%;
+  width: calc(100% - 141px);
 }
 
 @media screen and (max-width: 1200px) {
   .section_form_page .container {
-    width: 75%;
+    width: calc(100% - 42px);
   }
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
   .section_form_page .container {
     width: 100%;
+    padding: 0 !important;
   }
+}
+
+.section_form_page .container form .form-control {
+  padding: 10px 41px 10px 25px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1003,7 +1040,7 @@ input[type="email"]::placeholder {
 }
 
 .section_form_page .form_page {
-  padding: 60px 46px;
+  padding: 60px 46px 40px;
   border: none;
 }
 
@@ -1016,10 +1053,10 @@ input[type="email"]::placeholder {
 .section_form_page .form_page:after {
   content: '';
   width: 1px;
-  height: 49%;
+  height: 62%;
   background-color: #ddd6d6;
   position: absolute;
-  top: 8%;
+  top: 5%;
   left: 0;
   right: 0;
   margin: auto;
@@ -1047,19 +1084,34 @@ input[type="email"]::placeholder {
 }
 
 .section_form_page .form_page .file_upload_button label {
-  width: 35%;
+  width: 357px;
   margin: 40px auto 0;
+  padding: 10px 71px 10px 21px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section_form_page .form_page .file_upload_button label {
+    width: 360px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .section_form_page .form_page .file_upload_button label {
-    width: 44%;
+    width: 354px;
   }
+}
+
+.section_form_page .form_page .file_upload_button label div {
+  margin-right: 44px;
 }
 
 @media screen and (max-width: 768px) {
   .section_form_page .form_page .file_upload_button label {
     width: 100%;
+    margin: 10px auto 0;
+    font-size: 16px;
+    padding: 10px 30px 10px 21px;
   }
 }
 
@@ -1282,7 +1334,7 @@ footer .container form div:first-child {
 
 @media screen and (max-width: 992px) {
   .section_course_page_course {
-    padding-bottom: 23%;
+    padding-bottom: 208px;
   }
 }
 
@@ -1300,7 +1352,6 @@ footer .container form div:first-child {
 }
 
 .section_educational_center .container .row div:last-of-type .row img {
-  width: 180px;
   border-radius: 4px;
   border: solid 2px #ffffff;
   -webkit-box-shadow: 0px 6px 5px 2px #ebe8eb;
@@ -1389,6 +1440,7 @@ footer .container form div:first-child {
 
 select {
   padding-right: 25px;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
