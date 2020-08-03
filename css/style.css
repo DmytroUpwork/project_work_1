@@ -1096,6 +1096,7 @@ input[type="email"]::placeholder {
 .section_form_page .form_page {
   padding: 60px 46px 40px;
   border: none;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
