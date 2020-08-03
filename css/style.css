@@ -1364,6 +1364,23 @@ footer .container form div:first-child {
   padding: 20px 0 30px;
 }
 
+.section_table {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 470px) {
+  .section_table {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .section_table .container {
+    padding: 0;
+  }
+}
+
 .section_table .container table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -1374,6 +1391,24 @@ footer .container form div:first-child {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+@media screen and (max-width: 660px) {
+  .section_table .container table td, .section_table .container table th {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .section_table .container table td, .section_table .container table th {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .section_table .container table td, .section_table .container table th {
+    font-size: 8px;
+  }
 }
 
 .section_table .container table tr:nth-child(even) {
