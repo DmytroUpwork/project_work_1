@@ -1342,6 +1342,28 @@ footer .container form div:first-child {
   display: none;
 }
 
+.section_certification .container {
+  padding: 20px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section_certification .container img {
+  width: 79%;
+}
+
+.section_certification .container a {
+  padding: 20px 0 30px;
+}
+
 .section_educational_center .container {
   max-width: 100%;
   padding: 0 40px;
