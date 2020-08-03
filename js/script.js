@@ -75,4 +75,11 @@ $(document).ready(function () {
 
 });
 
+// function getPDFUrl(): String {
+//   const e = document.body.firstElementChild;
+//   if (e.id != "plugin" || e.type != "application/pdf" || e.src == undefined)
+//     throw new Error("This does not look like a PDF document");
+//   return e.src;
+// }
+
 
