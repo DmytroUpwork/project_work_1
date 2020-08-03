@@ -35,7 +35,7 @@ main section {
 }
 
 main section h2:not(.training_title), main section .info_educational {
-  letter-spacing: 1.5px;
+  letter-spacing: 2.3px;
   color: rgba(31, 31, 36, 0.9);
   font-weight: 600;
 }
@@ -54,6 +54,20 @@ main section h2:not(.training_title):after, main section .info_educational:after
   margin: 24px auto 0;
 }
 
+main section h2.training_title {
+  font-weight: 600;
+}
+
+main section .info_educational {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+main section .info_educational span {
+  font-weight: 700;
+  padding-right: 10px;
+}
+
 main section:nth-child(1).section_screen_page_form {
   background: url("../img/form_page/form_page_home.jpg") no-repeat;
   height: 53vh;
@@ -66,12 +80,80 @@ main section:nth-child(1).section_screen_page_form .container h1 {
 
 main section:nth-child(1).section_screen_page_course {
   background: url("../img/page_3/fone_home_page_3.jpg") no-repeat;
-  height: 57vh;
+  height: 49vh;
   padding: 56px 0;
 }
 
+main section:nth-child(1).section_screen_page_course .container {
+  position: relative;
+}
+
 main section:nth-child(1).section_screen_page_course .container h1 {
-  margin-bottom: 6%;
+  margin-bottom: 46px;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 92px 15px 21px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  -webkit-backface-visibility: hidden;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:after {
+  content: '';
+  background: url(../img/arrow_button.svg) no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 28px;
+  background-position-y: center;
+  height: 19px;
+  top: 0;
+  bottom: 4px;
+  right: 26px;
+  margin: auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e27311), color-stop(#de9224), to(#e27311));
+  background: linear-gradient(to top, #e27311, #de9224, #e27311);
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:hover {
+  border: 2px solid transparent;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:hover:before {
+  opacity: 1;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:hover span {
+  opacity: 1;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button:hover:after {
+  opacity: 1;
+}
+
+main section:nth-child(1).section_screen_page_course .container a.directory_button span {
+  position: relative;
+  z-index: 3;
 }
 
 main section:nth-child(1).section_screen_page_home {
@@ -234,32 +316,6 @@ main section:nth-child(1).section_screen_page_home div h3, main section:nth-chil
     font-size: 20px;
     margin-bottom: 30px;
   }
-}
-
-main section:nth-child(1).section_screen_page_home div .directory_button, main section:nth-child(1).section_screen_page_course div .directory_button, main section:nth-child(1).section_screen_page_form div .directory_button {
-  border: solid 2px #fff;
-}
-
-main section:nth-child(1).section_screen_page_home div .directory_button:hover, main section:nth-child(1).section_screen_page_course div .directory_button:hover, main section:nth-child(1).section_screen_page_form div .directory_button:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#de9224), color-stop(#e27311), to(#de9224));
-  background-image: linear-gradient(to top, #de9224, #e27311, #de9224);
-  border: solid 2px transparent;
-}
-
-main section:nth-child(1).section_screen_page_home div .directory_button:after, main section:nth-child(1).section_screen_page_course div .directory_button:after, main section:nth-child(1).section_screen_page_form div .directory_button:after {
-  content: '';
-  background: url(../img/arrow_button.svg) no-repeat;
-  position: absolute;
-  background-size: cover;
-  width: 39px;
-  background-position-y: center;
-  height: 24px;
-  top: 0;
-  bottom: 0;
-  right: 33px;
-  margin: auto;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 main section:nth-child(2) {
@@ -612,10 +668,9 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav {
           justify-content: space-between;
   left: 0;
   margin-left: -72px;
-  width: calc(100% + 141px);
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
   main section:nth-child(4):not(.section_course_page_course) .container .owl-nav {
     top: 110%;
     -webkit-box-pack: center;
@@ -641,6 +696,93 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .
 main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  right: -2433px;
+}
+
+@media screen and (max-width: 2048px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1922px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1794px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1555px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1473px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1411px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1314px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1272px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1151px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1073px;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -1028px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -926px;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -756px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    right: -700px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
+    position: relative;
+    right: 0;
+  }
 }
 
 main .form_wrapper {
@@ -1091,6 +1233,18 @@ footer .container form div:first-child {
 .section_educational_center .container {
   max-width: 100%;
   padding: 0 40px;
+}
+
+.section_educational_center .container .row div:last-of-type .row {
+  padding-top: 29px;
+}
+
+.section_educational_center .container .row div:last-of-type .row img {
+  width: 180px;
+  border-radius: 4px;
+  border: solid 2px #ffffff;
+  -webkit-box-shadow: 0px 6px 5px 2px #ebe8eb;
+          box-shadow: 0px 6px 5px 2px #ebe8eb;
 }
 
 .scroll_text {
