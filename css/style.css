@@ -56,6 +56,7 @@ main section h2:not(.training_title):after, main section .info_educational:after
 
 main section h2.training_title {
   font-weight: 600;
+  margin-bottom: 18px;
 }
 
 main section .info_educational {
@@ -519,15 +520,15 @@ main section#section_course .container h4 {
 }
 
 main section form:not(.form_page) {
-  -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
-          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
+  -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
+          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
 }
 
 main section form:not(.form_button_link) {
   border-radius: 6px;
   border: solid 1px #d2d2d2;
   background-color: #f2f2f2;
-  padding: 26px 20px 17px 20px;
+  padding: 30px 4px 17px 8px;
 }
 
 main section form:not(.form_button_link) #input_upload_file {
@@ -539,16 +540,23 @@ main section form:not(.form_button_link) .file_upload_button label {
   position: relative;
   border-radius: 5px;
   background-color: #d8d8d8;
-  padding: 12px 11px;
+  padding: 12px 32px 12px 20px;
   font-size: 18px;
+  font-weight: 600;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: rgba(31, 31, 36, 0.6);
-  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(72, 72, 109, 0.68);
+  letter-spacing: 1px;
+  width: 48%;
+}
+
+main section form:not(.form_button_link) .file_upload_button label div {
+  margin-right: 18px;
 }
 
 @media screen and (max-width: 480px) {
@@ -915,16 +923,19 @@ button.form_button_submit span {
   }
 }
 
-.form_button_submit_page_course {
+button.form_button_submit_page_course {
   position: absolute;
-  top: 116%;
+  top: 107%;
   left: 0;
   right: 0;
   margin: auto;
+  height: 50px;
+  font-size: 24px;
+  letter-spacing: 0.9px;
 }
 
 @media screen and (max-width: 768px) {
-  .form_button_submit_page_course {
+  button.form_button_submit_page_course {
     top: 109%;
   }
 }
@@ -1192,7 +1203,7 @@ footer .container form div:first-child {
 }
 
 .section_course_page_course {
-  padding-bottom: 196px;
+  padding-bottom: 125px;
   background: #f2f2f2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1200,14 +1211,59 @@ footer .container form div:first-child {
 
 .section_course_page_course .container {
   max-width: 100%;
-  padding: 93px 40px 0 40px;
+  padding: 0 40px;
 }
 
-.section_course_page_course .container .price_courses {
+.section_course_page_course .container .row div:first-of-type > .row > div {
+  margin-bottom: 43px;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row > div:nth-child(1) {
+  padding-right: 10px;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row > div:nth-child(2) {
+  padding-left: 10px;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row > div:nth-child(2) div.price_courses {
+  padding: 14px 45px 20px 20px;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row .price_courses {
   border-radius: 6px;
-  padding: 18px 7px;
+  padding: 14px 16px 17px 20px;
   border: solid 1px #e2e2e2;
   background-color: #fcfcfc;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  letter-spacing: 0.9px;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row .price_courses p {
+  opacity: 0.8;
+}
+
+.section_course_page_course .container .row div:first-of-type > .row .price_courses div:last-of-type {
+  text-align: center;
+  line-height: 33px;
+}
+
+.section_course_page_course .container .row > div:last-of-type form .form-row {
+  margin: 3.5px 3.5px;
+}
+
+.section_course_page_course .container .row > div:last-of-type form .form-row > div input, .section_course_page_course .container .row > div:last-of-type form .form-row > div select {
+  width: 98%;
+}
+
+.section_course_page_course .container .row > div:last-of-type form .form-row:first-of-type {
+  margin-top: 26px;
+}
+
+.section_course_page_course .container .row > div:last-of-type form .form-group {
+  margin: 13px 0;
 }
 
 .section_course_page_course .container .construction_industry:after {
@@ -1217,7 +1273,11 @@ footer .container form div:first-child {
   border: solid 1px #ffa21b;
   background-color: #ffa21b;
   display: block;
-  margin: 3% 0 6%;
+  margin: 4% 0 6%;
+}
+
+.section_course_page_course .container h4 {
+  letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1261,6 +1321,13 @@ footer .container form div:first-child {
 
 .scroll_text .force-overflow {
   min-height: auto;
+}
+
+.scroll_text .force-overflow p {
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  color: rgba(31, 31, 36, 0.9);
+  line-height: 21px;
 }
 
 .scroll_text .force-overflow .training_center {
