@@ -614,7 +614,7 @@ main section form:not(.form_button_link) .file_upload_button label div {
   margin-right: 18px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   main section form:not(.form_button_link) .file_upload_button label {
     width: 100%;
   }
@@ -1078,7 +1078,7 @@ input[type="email"]::placeholder {
 @media screen and (max-width: 768px) {
   .section_form_page .container {
     width: 100%;
-    padding: 0 !important;
+    padding: 34px 0 !important;
   }
 }
 
@@ -1089,7 +1089,7 @@ input[type="email"]::placeholder {
 
 @media screen and (max-width: 768px) {
   .section_form_page {
-    padding: 9% 0 29% 0;
+    padding: 9% 0 211px 0;
   }
 }
 
@@ -1101,6 +1101,12 @@ input[type="email"]::placeholder {
 @media screen and (max-width: 768px) {
   .section_form_page .form_page:after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_form_page .form_page {
+    padding: 60px 15px 40px;
   }
 }
 
@@ -1318,6 +1324,12 @@ footer .container form div:first-child {
 .section_course_page_course .container {
   max-width: 100%;
   padding: 0 40px;
+}
+
+@media screen and (max-width: 430px) {
+  .section_course_page_course .container {
+    padding: 0 15px;
+  }
 }
 
 .section_course_page_course .container .row div:first-of-type > .row > div {

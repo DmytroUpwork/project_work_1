@@ -375,7 +375,7 @@ main
           width: 48%
           div 
             margin-right: 18px
-          @media screen and ( max-width: 480px )
+          @media screen and ( max-width: 640px )
             width: 100%
           &:hover 
             color: rgba(31, 31, 36, 0.7)
@@ -638,20 +638,21 @@ input[type="email"]::placeholder
       width: calc(100% - 42px)
     @media screen and ( max-width: 768px )
       width: 100%
-      padding: 0!important
+      padding: 34px 0!important
     form 
       .form-control
         padding: 10px 41px 10px 25px
         font-size: 20px
   @media screen and ( max-width: 768px )
-    padding: 9% 0 29% 0
+    padding: 9% 0 211px 0
   .form_page 
     padding: 60px 46px 40px
-    border: none
-      
+    border: none     
     @media screen and ( max-width: 768px )
       &:after 
         display: none
+    @media screen and ( max-width: 768px )
+      padding: 60px 15px 40px
     &:after 
       content: ''
       width: 1px
@@ -765,6 +766,8 @@ footer
   .container   
     max-width: 100%
     padding: 0 40px
+    @media screen and ( max-width: 430px )
+      padding: 0 15px
     .row 
       div:first-of-type 
         >.row   
