@@ -189,13 +189,67 @@ main section:nth-child(1).section_screen_page_course a.directory_button span, ma
 main section:nth-child(1).section_screen_page_home {
   background: url("../img/img_fone_home.jpg") no-repeat;
   background-size: cover;
-  padding: 258px 0 86px 0;
+  padding: 616px 0 86px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media screen and (max-width: 2048px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 616px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 554px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 438px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 399px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 368px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 302px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 279px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main section:nth-child(1).section_screen_page_home {
+    padding-top: 258px;
+  }
 }
 
 main section:nth-child(1).section_screen_page_home .container form.form_button_link {
