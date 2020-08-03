@@ -1019,6 +1019,8 @@ button.form_button_submit_page_course {
 
 .form-control:hover {
   color: rgba(31, 31, 36, 0.6);
+  -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
+          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -1085,6 +1087,11 @@ input[type="email"]::placeholder {
 .section_form_page .container form .form-control {
   padding: 10px 41px 10px 25px;
   font-size: 20px;
+}
+
+.section_form_page .container form .form-control:hover {
+  -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
+          box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.08);
 }
 
 @media screen and (max-width: 768px) {
