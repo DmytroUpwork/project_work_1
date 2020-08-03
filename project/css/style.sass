@@ -141,7 +141,7 @@ main
                 color: rgba(31, 31, 36, 0.8)
                 width: 100%
     // секция 3 section_course "курсы" =========================================
-    &:nth-child(3)
+    &#section_course
       background: #f2f2f2
       .container
         padding: 56px 0 0 0
@@ -195,20 +195,6 @@ main
           font-size: 26px
           @media screen and ( max-width: 992px )
             margin-bottom: 48px
-        .price_courses
-          border-radius: 6px
-          padding: 18px 7px
-          border: solid 1px #e2e2e2
-          background-color: #fcfcfc
-        .construction_industry
-          &:after 
-            content: ''
-            width: 200px
-            height: 2px
-            border: solid 1px #ffa21b
-            background-color: #ffa21b
-            display: block
-            margin: 3% 0 6%
     //форма "записаться на курсы" ================================
     form:not(.form_page)
       box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25)
@@ -240,7 +226,7 @@ main
         @media screen and ( max-width: 992px )
           margin-bottom: 30px
     // секция 4 "наши учителя" карсель-слайдер ==============================================
-    &:nth-child(4) 
+    &:nth-child(4):not(.section_course_page_course)
       background: #fff
       overflow-x: hidden 
       padding-bottom: 90px
@@ -502,12 +488,29 @@ footer
     span 
       display: none
 .section_course_page_course 
-  display: none
   padding-bottom: 196px
+  background: #f2f2f2
+  transition: 0.2s
+  .container 
+    padding-top: 93px
+    .price_courses
+      border-radius: 6px
+      padding: 18px 7px
+      border: solid 1px #e2e2e2
+      background-color: #fcfcfc
+    .construction_industry
+      &:after 
+        content: ''
+        width: 200px
+        height: 2px
+        border: solid 1px #ffa21b
+        background-color: #ffa21b
+        display: block
+        margin: 3% 0 6%
   @media screen and ( max-width: 992px )
     padding-bottom: 23%
-.active_visible
-  display: block
+.hidden 
+  display: none
 
 // текстовый скролл ===========================================
 .scroll_text

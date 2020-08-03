@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light pl-5 pr-5">
+      <nav class="navbar navbar-light">
         <a class="navbar-brand" href="index.html">
           <img src="./img/Logo.svg" width="40" height="40" alt="">
         </a>
@@ -40,12 +40,18 @@
         <div class="container text-center">
           <h1 class="text-uppercase text-white">инвестиционный центр</h1>
           <h3 class="text-white">Дистанционные курсы профессиональной <br> переподготовки и повышения квалификации</h3>
-          <a href="#section_course" class="course_scroll text-white">Записаться на курсы</a>
+
+          <form action="#section_course" target="_blank" class="form_button_link">
+            <button class="course_scroll text-white">Записаться на курсы</button>
+          </form>
+
+
+          <!-- <a href="#section_course" class="course_scroll text-white">Записаться на курсы</a> -->
         </div>
       </section>
-      <section>
+      <section>   
         <h2 class="text-center text-uppercase">
-          <strong>Специализация курсов</strong>
+          Специализация курсов
         </h2>
         <div class="container">
           <div class="row m-0">
@@ -102,18 +108,25 @@
       </section>
       <section id="section_course">
         <h2 class="text-center text-uppercase">
-          <strong>Курсы</strong>
+          Курсы
         </h2>
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-6">
               <img src="./img/img_block_left.jpg" alt="" class="img_shadow">
-              <a href="index_form.html">Перейти</a>
+
+
+              <a href="index_form.html"><span>Перейти</span></a>
+
+
               <h4 class="text-center text_shadow">Професиональная переподготовка</h4>
             </div>
             <div class="col-md-12 col-lg-6">
               <img src="./img/img_block_right.jpg" alt="" class="img_shadow">
-              <a href="index_form.html">Перейти</a>
+              <a href="index_form.html"><span>Перейти</span></a>
+
+
+
               <h4 class="text-center text_shadow">Повышение квалификации</h4>
             </div>
           </div>
@@ -121,7 +134,7 @@
       </section>
       <section>
         <h2 class="text-center text-uppercase">
-          <strong>Наши Учителя</strong>
+          Наши Учителя
         </h2>
         <div class="container">
           <div class="owl-carousel owl-theme">
@@ -255,7 +268,11 @@
               <label for="exampleInputEmail1">Введите Ваш емэйл и мы свяжемся с вами!</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
             </div>
-            <button type="submit" class="btn form_button_submit" onclick='return false';>Записаться</button>
+
+
+            <button type="submit" class="btn form_button_submit" onclick='return false';><span>Записаться</span></button>
+
+
           </form>
         </div>
       </div>

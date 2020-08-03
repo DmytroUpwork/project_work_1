@@ -13,7 +13,7 @@ $(document).ready(function () {
       600: {
         items: 2,
       },
-      1000: {
+      992: {
         items: 3,
       },
     },
@@ -21,6 +21,20 @@ $(document).ready(function () {
   
   
   //  скрипт прокрутки к якорям =======================================
+  $("form[action*=#]").on("click", function (e) {
+    var anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("action")).offset().top,
+        },
+        777
+      );
+    e.preventDefault();
+    return false;
+  });
+
   $("a[href*=#]").on("click", function (e) {
     var anchor = $(this);
     $("html, body")
