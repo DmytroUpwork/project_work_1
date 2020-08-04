@@ -451,18 +451,20 @@ main section#section_course .container .img_shadow {
   border-radius: 6px;
   -webkit-box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
           box-shadow: 0px 7px 21.6px 2.4px rgba(31, 31, 36, 0.25);
+  overflow: hidden;
+  position: relative;
 }
 
 main section#section_course .container a {
   position: absolute;
   color: #fff;
-  top: 64%;
+  bottom: 41px;
   left: 0;
   right: 0;
   margin: auto;
-  width: 43%;
+  width: 255px;
   font-size: 26px;
-  padding: 5px 34px 7px;
+  padding: 5px 31px 5px;
   border: 2px solid #fff;
   border-radius: 8px;
   -webkit-backface-visibility: hidden;
@@ -501,56 +503,17 @@ main section#section_course .container a span {
   z-index: 3;
 }
 
-@media screen and (max-width: 1280px) {
-  main section#section_course .container a {
-    top: 56%;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  main section#section_course .container a {
-    width: 52%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  main section#section_course .container a {
-    top: 63%;
-  }
-}
-
-@media screen and (max-width: 778px) {
-  main section#section_course .container a {
-    width: 52%;
-    top: 50%;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  main section#section_course .container a {
-    width: 70%;
-    top: 51%;
-  }
-}
-
-@media screen and (max-width: 434px) {
-  main section#section_course .container a {
-    width: 79%;
-    top: 35%;
-  }
-}
-
 main section#section_course .container a:after {
   content: '';
   background: url(../img/arrow_button.svg) no-repeat;
   position: absolute;
   background-size: cover;
-  width: 39px;
+  width: 32px;
   background-position-y: center;
-  height: 24px;
-  top: 0;
+  height: 18px;
+  top: 2px;
   bottom: 0;
-  right: 33px;
+  right: 37px;
   margin: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
