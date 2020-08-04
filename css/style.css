@@ -729,8 +729,7 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  left: 0;
-  margin-left: -72px;
+  width: 100%;
 }
 
 @media screen and (max-width: 640px) {
@@ -739,9 +738,6 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    left: 0;
-    margin-left: 0;
   }
 }
 
@@ -760,103 +756,25 @@ main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: absolute;
-  right: -2433px;
-}
-
-@media screen and (max-width: 2048px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1922px;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1794px;
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1555px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1473px;
-  }
-}
-
-@media screen and (max-width: 1536px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1411px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1314px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1272px;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1242px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1151px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1073px;
-  }
-}
-
-@media screen and (max-width: 1152px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -1028px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -926px;
-  }
-}
-
-@media screen and (max-width: 854px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -756px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -700px;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
-    right: -639px;
-  }
+  right: -72px;
 }
 
 @media screen and (max-width: 640px) {
   main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-next {
     position: relative;
     right: 0;
+  }
+}
+
+main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-prev {
+  position: absolute;
+  margin-left: -67px;
+}
+
+@media screen and (max-width: 640px) {
+  main section:nth-child(4):not(.section_course_page_course) .container .owl-nav .owl-prev {
+    position: relative;
+    margin-left: 0;
   }
 }
 

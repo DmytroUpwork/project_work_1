@@ -421,14 +421,10 @@ main
           top: 44%
           display: flex
           justify-content: space-between
-          left: 0
-          margin-left: -72px
+          width: 100%
           @media screen and ( max-width: 640px )
             top: 110%
             justify-content: center
-            width: 100%
-            left: 0
-            margin-left: 0
           .owl-next, .owl-prev 
             background: url('../img/arrow_carousel.svg') no-repeat
             width: 39px
@@ -439,40 +435,16 @@ main
           .owl-next
             transform: rotate(180deg)
             position: absolute
-            right: -2433px
-            @media screen and ( max-width: 2048px )
-              right: -1922px
-            @media screen and ( max-width: 1920px )
-              right: -1794px
-            @media screen and ( max-width: 1680px )
-              right: -1555px
-            @media screen and ( max-width: 1600px )
-              right: -1473px
-            @media screen and ( max-width: 1536px )
-              right: -1411px
-            @media screen and ( max-width: 1440px )
-              right: -1314px
-            @media screen and ( max-width: 1400px )
-              right: -1272px
-            @media screen and ( max-width: 1366px )
-              right: -1242px
-            @media screen and ( max-width: 1280px )
-              right: -1151px
-            @media screen and ( max-width: 1200px )
-              right: -1073px
-            @media screen and ( max-width: 1152px )
-              right: -1028px
-            @media screen and ( max-width: 1024px )
-              right: -926px
-            @media screen and ( max-width: 854px )
-              right: -756px           
-            @media screen and ( max-width: 800px )
-              right: -700px
-            @media screen and ( max-width: 736px )
-              right: -639px
+            right: -72px
             @media screen and ( max-width: 640px )
               position: relative
               right: 0
+          .owl-prev 
+            position: absolute
+            margin-left: -67px
+            @media screen and ( max-width: 640px )
+              position: relative
+              margin-left: 0
 
   //form email =================================================
   .form_wrapper
