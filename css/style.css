@@ -1339,7 +1339,7 @@ footer .container form div:first-child {
 }
 
 .section_certification .container img {
-  width: 79%;
+  width: 62%;
 }
 
 @media screen and (max-width: 387px) {
@@ -1350,11 +1350,14 @@ footer .container form div:first-child {
 
 .section_certification .container h5 {
   margin-top: 50px;
+  font-size: 17px;
+  width: 72%;
 }
 
 @media screen and (max-width: 387px) {
   .section_certification .container h5 {
     font-size: 15px;
+    width: 100%;
   }
 }
 
