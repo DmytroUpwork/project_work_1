@@ -383,12 +383,17 @@ main section:nth-child(2) .container {
   max-width: 100%;
 }
 
+@media screen and (max-width: 496px) {
+  main section:nth-child(2) .container {
+    padding: 34px 15px;
+  }
+}
+
 main section:nth-child(2) .container .row > div {
   padding: 12px;
 }
 
 main section:nth-child(2) .container .row > div .img_course {
-  padding: 25.5px 30px;
   border-radius: 6px;
   border: solid 1px #e2e2e2;
   background-color: #fcfcfc;
@@ -408,6 +413,10 @@ main section:nth-child(2) .container .row > div .img_course:hover h5 {
   background: conic-gradient(from 0.25turn, #e28d11, #ff511b 0.5turn, #e28d11), linear-gradient(to bottom, #e79112, #e79112);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+main section:nth-child(2) .container .row > div .img_course a {
+  padding: 25.5px 30px;
 }
 
 main section:nth-child(2) .container .row > div .img_course a img {
@@ -1297,6 +1306,24 @@ footer .container form div:first-child {
   display: none;
 }
 
+.section_certification {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 570px) {
+  .section_certification {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .section_certification h2 {
+    font-size: 19px;
+  }
+}
+
 .section_certification .container {
   padding: 20px 0 50px;
   display: -webkit-box;
@@ -1315,8 +1342,20 @@ footer .container form div:first-child {
   width: 79%;
 }
 
-.section_certification .container a {
-  padding: 20px 0 30px;
+@media screen and (max-width: 387px) {
+  .section_certification .container img {
+    width: 100%;
+  }
+}
+
+.section_certification .container h5 {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 387px) {
+  .section_certification .container h5 {
+    font-size: 15px;
+  }
 }
 
 .section_table {

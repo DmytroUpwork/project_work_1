@@ -217,10 +217,11 @@ main
       .container
         padding: 34px 28px
         max-width: 100%
+        @media screen and ( max-width: 496px )
+          padding: 34px 15px
         .row > div 
           padding: 12px
-          .img_course
-            padding: 25.5px 30px
+          .img_course          
             border-radius: 6px
             border: solid 1px #e2e2e2
             background-color: #fcfcfc
@@ -234,6 +235,7 @@ main
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent               
             a
+              padding: 25.5px 30px
               img 
                 width: 20%
                 height: 67px
@@ -721,6 +723,14 @@ footer
 .hidden 
   display: none
 .section_certification 
+  padding-left: 40px
+  padding-right: 40px
+  @media screen and (max-width: 570px) 
+    padding-left: 15px
+    padding-right: 15px
+  h2 
+    @media screen and (max-width: 387px) 
+      font-size: 19px
   .container 
     padding: 20px 0 50px
     display: flex
@@ -728,8 +738,15 @@ footer
     flex-direction: column
     img 
       width: 79%
-    a 
-      padding: 20px 0 30px
+      @media screen and (max-width: 387px) 
+        width: 100%
+    h5 
+      margin-top: 50px
+      @media screen and (max-width: 387px) 
+        font-size: 15px
+
+    // a 
+    //   padding: 20px 0 30px
 .section_table 
   padding-left: 40px
   padding-right: 40px
