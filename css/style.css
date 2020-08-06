@@ -380,7 +380,19 @@ main section:nth-child(2) {
 
 main section:nth-child(2) .container {
   padding: 34px 28px;
-  max-width: 100%;
+  max-width: 64%;
+}
+
+@media screen and (max-width: 1920px) {
+  main section:nth-child(2) .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  main section:nth-child(2) .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 496px) {
@@ -447,7 +459,19 @@ main section#section_course {
 
 main section#section_course .container {
   padding: 56px 40px 0 40px;
-  max-width: 100%;
+  max-width: 64%;
+}
+
+@media screen and (max-width: 1920px) {
+  main section#section_course .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  main section#section_course .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 570px) {
